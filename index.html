@@ -178,12 +178,9 @@
 </ul>
 <hr>
 <h2 id="background"><a href="#background" class="headerlink" title="background"></a>background</h2><ul>
-<li><p>background-color：设置元素的背景颜色；</p>
-</li>
-<li><p>background-image： url(‘URL’)：设置元素的背景图像；</p>
-</li>
-<li><p>background-repeat：控制背景图像是否重复；  </p>
-<table>
+<li>background-color：设置元素的背景颜色；</li>
+<li>background-image： url(‘URL’)：设置元素的背景图像；</li>
+<li>background-repeat：控制背景图像是否重复；  <table>
 <thead>
 <tr>
 <th>repeat</th>
@@ -204,10 +201,8 @@
 </tr>
 </tbody></table>
 </li>
-<li><p>background-position :默认相对于左上角</p>
-</li>
-<li><p>ackground-origin 是 CSS3 中新增的属性。<br>在使用 background-position 属性来设置背景图像的位置时，默认是以元素左上角的位置来计算的。<br>您还可以使用 background-origin 属性来设置 background-position 属性相对哪个位置来定位背景图像  </p>
-<table>
+<li>background-position :默认相对于左上角</li>
+<li>ackground-origin 是 CSS3 中新增的属性。<br>在使用 background-position 属性来设置背景图像的位置时，默认是以元素左上角的位置来计算的。<br>您还可以使用 background-origin 属性来设置 background-position 属性相对哪个位置来定位背景图像  <table>
 <thead>
 <tr>
 <th>值</th>
@@ -228,8 +223,7 @@
 </tr>
 </tbody></table>
 </li>
-<li><p>background-attachment 属性用来设置背景图像是固定在某个位置还是跟随页面一起滚动</p>
-<table>
+<li>background-attachment 属性用来设置背景图像是固定在某个位置还是跟随页面一起滚动<table>
 <thead>
 <tr>
 <th>值</th>
@@ -246,10 +240,8 @@
 </tr>
 </tbody></table>
 </li>
-<li><p>background-size： x% y%<br>使用百分比表示背景图像相对于所在元素宽度与高度的百分比，x% 表示宽度，y% 表示高度，如果只设置第一个值，那么第二个值将被设置为默认值 auto（自动）</p>
-</li>
-<li><p>background-clip ： 是 CSS3 中新增的属性，通过它可以设置背景图像的显示区域。</p>
-<table>
+<li>background-size： x% y%<br>使用百分比表示背景图像相对于所在元素宽度与高度的百分比，x% 表示宽度，y% 表示高度，如果只设置第一个值，那么第二个值将被设置为默认值 auto（自动）</li>
+<li>background-clip ： 是 CSS3 中新增的属性，通过它可以设置背景图像的显示区域。<table>
 <thead>
 <tr>
 <th>值</th>
@@ -268,9 +260,17 @@
 <td>content-box</td>
 <td>在元素内容区域显示背景图像</td>
 </tr>
+<tr>
+<td><strong>简写</strong>  ：background 是背景属性的简写形式</td>
+<td></td>
+</tr>
+<tr>
+<td>color-image-position-size-repeat-attachment-origin-clip</td>
+<td></td>
+</tr>
 </tbody></table>
 </li>
-<li><p>*简写**：background 是背景属性的简写形式<br>color-image-position-size-repeat-attachment-origin-clip     </p>
+</ul>
 <hr>
 <h2 id="font"><a href="#font" class="headerlink" title="font"></a>font</h2><ul>
 <li>font-family：设置字体；</li>
@@ -323,12 +323,9 @@
 <td>100 为最细的字体，400 等同于 normal，700 等同于 bold</td>
 </tr>
 </tbody></table>
-</li>
-</ul>
 <ul>
 <li>font-size：设置字体尺寸：    px</li>
-<li>font-variant：将小写字母转换为小型大写字母<br>small-caps    将文本中的小写英文字母转换为小型大写字母</li>
-<li><em>简写</em>*<br>style-variant-weight-stretch-size-height-family  </li>
+<li>font-variant：将小写字母转换为小型大写字母<br>small-caps    将文本中的小写英文字母转换为小型大写字母<br><strong>简写</strong>    style-variant-weight-stretch-size-height-family  </li>
 </ul>
 <hr>
 <h2 id="text"><a href="#text" class="headerlink" title="text"></a>text</h2><ul>
@@ -665,16 +662,18 @@
 </li>
 <li><p>-position inside outside</p>
 </li>
-<li><p>-image 可以将列表项前的标记替换为一个图像： list-style-image: url(‘链接’);</p>
-</li>
-<li><p><em>简写</em>* t p i</p>
+<li><p>-image 可以将列表项前的标记替换为一个图像： list-style-image: url(‘链接’);<br><strong>简写</strong>  t p i</p>
 </li>
 </ul>
 <hr>
 <h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p> <img src="http://c.biancheng.net/uploads/allimg/210806/145231E13-0.gif" alt="盒子模型"></p>
 <ul>
 <li>width 与  height指定内容区大小 对于img，说指定其中一种，另一个自动缩放<br>max-width与max-height 指定最大尺寸<br>min-width与min-height 指定最小尺寸 </li>
+<li>box-shadow<br>box-shadow: h-shadow v-shadow blur spread color inset(默认outset);</li>
 </ul>
+<blockquote>
+<p>提示：与 text-shadow 属性相似，box-shadow 属性也可以同时设定多组阴影效果，每组之间使用逗号分隔，定义的多组阴影效果会按照定义顺序依次罗列，第一个阴影在最上面，以此类推。</p>
+</blockquote>
 <hr>
 <h2 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h2><p>为元素设置外边距    </p>
 <h3 id="外边距折叠"><a href="#外边距折叠" class="headerlink" title="外边距折叠"></a>外边距折叠</h3><p>外边距折叠指的是相邻的两个或多个外边距会在垂直方向上发生合并，合并为一个外边距。关于外边距折叠有以下几点需要注意：<br>  margin 折叠只发生在块级元素上；<br>1.浮动元素的外边距不会与任何外边距发生折叠；<br>2.设置了 overflow 属性且值不为 visible 的块级元素，将不会与它的子元素发生外边距折叠；<br>3.绝对定位元素的外边距不与任何外边距发生折叠；<br>4.根元素（例如<body>）的外边距不与其它任何外边距发生折叠。</p>
@@ -739,7 +738,7 @@
 <hr>
 <h2 id="精灵图"><a href="#精灵图" class="headerlink" title="精灵图"></a>精灵图</h2><p>  精灵图就是一个大的背景图，您只需要使用 background-position 来移动背景图，从而只显示背景图的一部分。<br>  使用精灵图可以减少图片的体积，也可以显著的减少对服务器的请求次数，提高网页的加载速度。</p>
 <hr>
-<h2 id="overfloe"><a href="#overfloe" class="headerlink" title="overfloe"></a>overfloe</h2><p>滚动条:该属性可以设置如何处理溢出元素内容区的内容<br> |值|描述|<br> |—-|—-|<br> |visible|    默认值，对溢出的内容不做处理，内容会在元素内容区之外显示|<br> |hidden|隐藏溢出元素内容区的内容|<br> |scroll|隐藏溢出元素内容区的内容，并在元素的左侧和下方分别创建一个滚动条，通过滑动滚动条可以查看元素中的所有内容|<br> |auto    |如果出现内容溢出，则会在元素左侧创建一个滚动条，通过滑动滚动条可以查看元素中的全部内容|</p>
+<h2 id="overflow"><a href="#overflow" class="headerlink" title="overflow"></a>overflow</h2><p>滚动条:该属性可以设置如何处理溢出元素内容区的内容<br> |值|描述|<br> |—-|—-|<br> |visible|    默认值，对溢出的内容不做处理，内容会在元素内容区之外显示|<br> |hidden|隐藏溢出元素内容区的内容|<br> |scroll|隐藏溢出元素内容区的内容，并在元素的左侧和下方分别创建一个滚动条，通过滑动滚动条可以查看元素中的所有内容|<br> |auto    |如果出现内容溢出，则会在元素左侧创建一个滚动条，通过滑动滚动条可以查看元素中的全部内容|</p>
 <hr>
 <h2 id="css计数器"><a href="#css计数器" class="headerlink" title="css计数器"></a>css计数器</h2><p>使用计数器<strong>三步</strong>走：<br>1.counter-reset：none | [<identifier> <integer>]<br>阻止复位 计数器名字 计数器起始值<br>2.counter-increment:格式同上<br>3.counter(name)  </p>
 <pre><code>    body   &#123;  
@@ -816,7 +815,197 @@
 <li>清除浮动：left right both none(默认值)</li>
 </ul>
 <hr>
-
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>伪类的名称不区分大小写，但需要以冒号:开头  </p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:active</td>
+<td>:checked</td>
+<td>:disabled</td>
+<td>:empty</td>
+<td>:enabled</td>
+<td>:first-child</td>
+<td>:first-of-type</td>
+<td>:focus</td>
+</tr>
+<tr>
+<td>:hover</td>
+<td>:in-range</td>
+<td>:invalid</td>
+<td>:lang(language)</td>
+<td>:last-child</td>
+<td>:last-of-type</td>
+<td>:link</td>
+<td>:not(selector)</td>
+</tr>
+<tr>
+<td>:nth-child(n)</td>
+<td>:nth-last-child(n)</td>
+<td>:nth-last-of-type(n)</td>
+<td>:nth-of-type(n)</td>
+<td>:only-of-type</td>
+<td>:only-child</td>
+<td>:optional</td>
+<td>:out-of-range</td>
+</tr>
+<tr>
+<td>:read-only</td>
+<td>:read-write</td>
+<td>:required</td>
+<td>:root</td>
+<td>:target</td>
+<td>:valid</td>
+<td>:visited</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h2><p>在 CSS1 和 CSS2 中，伪元素的使用与伪类相同，都是使一个冒号:与选择器相连。但在 CSS3 中，将伪元素单冒号的使用方法改为了使用双冒号::，以此来区分伪类和伪元素。因此，建议在使用伪元素时使用双冒号而不是单冒号。  </p>
+<table>
+<thead>
+<tr>
+<th>伪元素</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>::after</td>
+<td>::before</td>
+<td>::first-letter</td>
+</tr>
+<tr>
+<td>::first-line</td>
+<td>::selection</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>selection: 匹配用户选择的元素部分  </p>
+<hr>
+<h2 id="opacity"><a href="#opacity" class="headerlink" title="opacity"></a>opacity</h2><p>用来设置元素的透明度，它不仅对颜色有效，对图像或者页面中其它的元素也有效<br>opacity: number;</p>
+<ul>
+<li>1.其中 number 为一个 0~1 之间的浮点数（小数），用来表示元素的透明度，值越小则越透（0 表示完全透明，1 表示完全不透明）。</li>
+<li>2.当一个元素定义了 opacity 属性，并且其值小于 1 时，那么它的子元素也会拥有同样的透明度；</li>
+<li>3.当一个元素定义了 opacity 属性，并且其值小于 1 时，将会重新定义该元素默认的 z-index 属性，如果其它的元素为非定位元素，那么该元素的堆叠级别将会高于其它元素；<br><strong>注</strong>  ：IE8 或者更早版本的 IE 浏览器不支持 opacity 属性，使用filter<br>filter: alpha(值0~100)<br>为了让所有浏览器都可以实现透明效果，您可以同时定义 opacity 和 filter 两个属性</li>
+</ul>
+<hr>
+<h2 id="radius"><a href="#radius" class="headerlink" title="radius"></a>radius</h2><p>圆角 语法：border-top-left/right:    border-bottom-right/left:  </p>
+<hr>
+<h2 id="border-image"><a href="#border-image" class="headerlink" title="border-image"></a>border-image</h2><p>使用图像来作为元素的边框，以创建出丰富多彩边框效果。  </p>
+<ul>
+<li>border-image-source：定义边框图像的路径；</li>
+<li>border-image-slice：定义边框图像从什么位置开始分割；(扣除中心区域)<br><img src="http://c.biancheng.net/uploads/allimg/210809/15324912F-2.gif" alt="slice"></li>
+<li>border-image-width：定义边框图像的厚度（宽度）；</li>
+<li>border-image-outset：定义边框图像的外延尺寸（边框图像区域超出边框的量）；</li>
+<li>border-image-repeat：定义边框图像的平铺方式。<br>stretch,repeat<br>round：与 repeat 关键字类似，不同之处在于，当背景图像不能以整数次平铺时，会根据情况缩放图像；<br>space：与 repeat 关键字类似，不同之处在于，当背景图像不能以整数次平铺时，会用空白间隙填充在图像周围。<br><strong>简写</strong>  : source-slice-width-outset-repeat</li>
+</ul>
+<hr>
+<h2 id="渐变-感觉没什么用-暂时跳过"><a href="#渐变-感觉没什么用-暂时跳过" class="headerlink" title="渐变 感觉没什么用 暂时跳过"></a>渐变 感觉没什么用 暂时跳过</h2><hr>
+<h2 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h2><p>过渡效果(类似flash动画)<br>CSS 中提供了 5 个有关过渡的属性，如下所示：</p>
+<ul>
+<li>  <strong>transition-property</strong>  ：设置元素中参与过渡的属性；<br>none,all,各属性名(用,隔开)</li>
+<li>  <strong>transition-duration</strong>  ：设置元素过渡的持续时间；<br>0s不会有效果</li>
+<li>  <strong>transition-timing-function</strong>  ：设置元素过渡的动画类型；<br>linear,ease,ease-in,ease-out,ease-in-out,cubic-bezier()函数</li>
+<li><strong>transition-delay</strong>  ：设置过渡效果延迟(等待)的时间，默认为 0；<br>   <strong>简写</strong>    ：transition：简写属性，用于同时设置上面(按上面顺序)的四个过渡属性。</li>
+</ul>
+<hr>
+<h2 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h2><p>例：<br><img src="http://c.biancheng.net/uploads/allimg/210810/1112331T9-0.gif" alt="多列布局例子"></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>column-count</td>
+<td>指定元素应该分为几列</td>
+</tr>
+<tr>
+<td>column-fill</td>
+<td>指定如何填充每个列</td>
+</tr>
+<tr>
+<td>column-gap</td>
+<td>指定列与列之间的间隙</td>
+</tr>
+<tr>
+<td>column-rule</td>
+<td>所有 column-rule-* 属性的简写形式(w s c)</td>
+</tr>
+<tr>
+<td>column-rule-color</td>
+<td>指定列与列之间边框的颜色</td>
+</tr>
+<tr>
+<td>column-rule-style</td>
+<td>指定列与列之间边框的样式</td>
+</tr>
+<tr>
+<td>column-rule-width</td>
+<td>指定列与列之间边框的宽度</td>
+</tr>
+<tr>
+<td>column-span</td>
+<td>指定元素应该横跨多少列  all,none</td>
+</tr>
+<tr>
+<td>column-width</td>
+<td>指定列的宽度</td>
+</tr>
+<tr>
+<td>columns</td>
+<td>column-width 与 column-count 属性的简写属性</td>
+</tr>
+</tbody></table>
+<p>style:<br>|值|描述|<br>|—-|—-|<br>|none|    无边框|<br>|hidden|    隐藏边框，与 “none” 类似|<br>|dotted|    定义点状虚线边框|<br>|dashed    |定义虚线边框|<br>|solid    |定义实线边框|<br>|double    |定义双实线边框，双实线边框的宽度等于 border-width 的值|<br>|groove    |定义 3D 凹槽边框，其效果取决于 border-color 的值|<br>|ridge    |定义 3D 垄状边框，其效果取决于 border-color 的值|<br>|inset    |定义 3D 嵌入边框，其效果取决于 border-color 的值|<br>|outset    |定义 3D 突出边框，其效果取决于 border-color 的值|  </p>
+<hr>
+<h2 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a>box-sizing</h2><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>content-box</td>
+<td>默认值，元素的实际宽度或高度等于元素内容区的宽度或高度、内边距和边框的和</td>
+</tr>
+<tr>
+<td>border-box</td>
+<td>在元素的内容区内绘制内边距或边框，内边距或边框不会影响元素的实际宽度或高度</td>
+</tr>
+<tr>
+<td><strong>提示：当为元素定义 box-sizing: border-box; 属性时，元素内容区的实际宽度和高度是 width 和 height 属性中减去各边的边框和内边距的宽度。</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="filter-滤镜-暂不总结"><a href="#filter-滤镜-暂不总结" class="headerlink" title="filter (滤镜 暂不总结)"></a>filter (滤镜 暂不总结)</h2><hr>
+<h2 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h2><p>Flex 是 Flexible Box 的缩写，意为“弹性布局”或者“弹性盒子”，是 CSS3 中的一种新的布局模式，可以简便、完整、响应式地实现各种页面布局，当页面需要适应不同的屏幕大小以及设备类型时非常适用。目前，几乎所有的浏览器都支持 Flex 布局。<br>  <strong>基本概念</strong><br>1.采用 Flex 布局的元素，称为 Flex 容器（flex container），简称“容器”。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称“项目”。<br>2.容器默认存在两根轴，分别为水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置叫做 main start，结束位置叫做 main end；交叉轴的开始位置叫做 cross start，结束位置叫做 cross end。<br>3.项目默认沿主轴排列。单个项目占据的主轴空间叫做 main size，占据的交叉轴空间叫做 cross size。<br><img src="http://c.biancheng.net/uploads/allimg/210810/1504491454-0.gif" alt="Flex基本概念"></p>
+<blockquote>
+<p>提示：您可以通过将元素的 display 属性设置为 flex（生成块级 flex 容器）或 inline-flex（生成类似 inline-block 的行内块级 flex 容器）。当一个元素设置了 Flex 布局以后，其子元素的 float、clear 和 vertical-align 等属性将失效。</p>
+</blockquote>
+<hr>
+<h2 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h2><p>  <strong>flex-direction</strong>  ：row,row-reverse,column,column-reverse<br>  <strong>flex-wrap</strong>  :nowrap,wrap,wrap-reverse<br>  <strong>flex-flow</strong>  : 上面两个属性简写，d,w<br>  <strong>justify-content</strong>  :flex-start,flex-end,center,space-between,space-around<br>  <strong>align-items</strong>  ：stretch,centre,flex-start,flex-end,baseline<br>  <strong>align-content</strong>  : 与 justify-content 属性类似，可以在弹性盒子的侧轴还有多余空间时调整容器内项目的对齐方式</p>
+<hr>
+<h2 id="项目属性"><a href="#项目属性" class="headerlink" title="项目属性"></a>项目属性</h2><p><strong>order</strong>  :设置项目在容器中的位置；<br><strong>align-self</strong>  ：auto,stretch,centre,flex-start,flex-end,baseline<br>(该属性会覆盖align-items)<br><strong>flex</strong>  ：grow-shrink-basis  有计算公式</p>
+<hr>
+<h2 id="resize"><a href="#resize" class="headerlink" title="resize"></a>resize</h2><p>该属性允许用户通过拖动的方式来自由缩放元素的尺寸<br>none,both,horizontal,vertical</p>
+<hr>
+<h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><p>  <strong>基本概念</strong>  CSS响应式布局也称自适应布局，是 Ethan Marcotte 在 2010 年 5 月份提出的一个概念，简单来讲就是一个网站能够兼容多个不同的终端（设备），而不是为每个终端做一个特定的版本。这个概念是为解决移动端浏览网页而诞生的。响应式布局能够为使用不同终端的用户提供很好的用户体验，而且随着大屏智能手机的普及，用“大势所趋”来形容也不为过。</p>
+<h2 id="2D，3D转换"><a href="#2D，3D转换" class="headerlink" title="2D，3D转换"></a>2D，3D转换</h2>
       
 
       
@@ -1046,147 +1235,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2022/01/13/%E6%88%91%E7%9A%84Markdown%E5%AD%A6%E4%B9%A0%E5%B0%8F%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
-
-        
-        <a href="/2022/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2022-01-12T15:53:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##第一章</p>
-<p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2022/01/12/hello-world/" class="archive-article-date">
-  	<time datetime="2022-01-12T15:44:24.809Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/01/12/hello-world/">展开全文 >></a>
         </p>
       
 
