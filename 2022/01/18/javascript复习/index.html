@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>你好，九瓶</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="html 复习 盲点复习 &lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。 &lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表">
+  <meta name="description" content="Javascript 小记#(严格区分大小写，弱类型)     在Html文件中嵌入Javascript1.在 HTML 页面中嵌入 JavaScript 脚本需要使用 &lt;script&gt; 标签，用户可以在 &lt;script&gt; 标签中直接编写 JavaScript 代码 &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;    &#x2F;*">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你好，九瓶">
-<meta property="og:url" content="http://example.com/2022/01/14/html%20%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:url" content="http://example.com/2022/01/18/javascript%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="你好，九瓶">
-<meta property="og:description" content="html 复习 盲点复习 &lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。 &lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表">
+<meta property="og:description" content="Javascript 小记#(严格区分大小写，弱类型)     在Html文件中嵌入Javascript1.在 HTML 页面中嵌入 JavaScript 脚本需要使用 &lt;script&gt; 标签，用户可以在 &lt;script&gt; 标签中直接编写 JavaScript 代码 &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;    &#x2F;*">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-14T09:04:52.205Z">
-<meta property="article:modified_time" content="2022-01-18T15:12:55.127Z">
+<meta property="article:published_time" content="2022-01-18T01:48:58.974Z">
+<meta property="article:modified_time" content="2022-01-21T05:21:18.721Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,24 +154,198 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-html 复习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-javascript复习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="html-复习"><a href="#html-复习" class="headerlink" title="html 复习"></a>html 复习</h1><hr>
-<h2 id="盲点复习"><a href="#盲点复习" class="headerlink" title="盲点复习"></a>盲点复习</h2><ul>
-<li>&lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。</li>
-<li>&lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表示标签中的内容很重要，而&lt;i&gt;标签仅仅用于定义斜体文本。  </li>
-<li>浏览器根据历史记录来判断超链接是否被点击过，如果 href 属性和历史记录中的某条 URL 重合，那么说明该链接被点击了。清空浏览器的历史记录会让超链接的颜色再次变回蓝色。 <span id="more"></span> </li>
-<li>HTML5 中增加了&lt;picture&gt;标签<br><strong>1</strong>  .在 &lt;picture&gt; 标签中包含零个或多个 &lt;source&gt; 标签，通过 &lt;source&gt; 标签中的 media 属性可以设定匹配条件（允许哪个版本的图片显示），通过 srcset 属性可以定义图片的路径。另外，在 &lt;picture&gt; 标签的最后还需要定义一个 &lt;img&gt; 标签<br><strong>2</strong>  .浏览器将评估每个 &lt;source&gt; 标签，并在其中选择最合适的 &lt;source&gt; 标签，如果未找到匹配项，则使用&lt;img&gt; 标签所定义的图片。另外，&lt;img&gt; 必须是\ <picture> 标签的最后一个子元素。   </li>
-<li><strong>1</strong>  .&lt;caption&gt; &lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;<br><strong>2</strong>  .属性：rowspan 属性表示向下合并单元格，colspan 属性表示向右合并单元格。<br><strong>3</strong>  .每次合并 n 个单元格都要少写 n-1 个&lt;td&gt;标签。<br><strong>4</strong>  .即使一个单元格中没有任何内容，我们仍需使用 <td> 或 <th> 元素来表示一个空单元格的存在，建议在 <td> 或 <th> 中加入 &nbsp;（空格），否则低版本的 IE 可能无法显示出这个单元格的边框。</li>
-<li>&lt;dl&gt; &lt;dt&gt; &lt;dd&gt;  </li>
-<li>&lt;form&gt; action 属性用来指明将表单提交到哪个页面；<br>method 属性表示使用哪个方式提交数据，包括 GET 和 POST 两种方式，它们两者的区别如下：<br><strong>1</strong>  .GET：用户点击提交按钮后，提交的信息会被显示在页面的地址栏中。一般情况下，GET 提交方式中不建议包含密码，因为密码被提交到地址栏，不安全。<br><strong>2</strong>  .POST：如果表单包含密码这种敏感信息，建议使用 POST 方式进行提交，这样数据会传送到后台，不显示在地址栏中，相对安全。<br><strong>3.</strong>  &lt;label&gt;    为表单中的各个控件定义标题<br><strong>4.</strong>  &lt;input&gt;    定义输入框<br><strong>5.</strong>  &lt;textarea&gt;    定义文本域（一个可以输入多行文本的控件）<br><strong>6.</strong>  &lt;select&gt;    定义下拉列表<br><strong>7.</strong>  &lt;option&gt;    定义下拉列表中的选项<br><strong>8.</strong>  &lt;button&gt;    定义一个可以点击的按钮</li>
-<li>嵌入css：<strong>链接式</strong>  &lt;  **link**  href=”名称” type=”text/css” rel=”stylesheet” /&gt;<br><strong>导入样式</strong>  使用 @import 命令导入外部样式表。<br>&lt;  style   type=”text/css”&gt; @import url(daoru.css);&lt;/  style &gt;</li>
-<li>html布局：<br><strong>1.</strong>  &lt;nav&gt;    用于定义网页中的导航栏。<br><strong>2.</strong>  &lt;section&gt;代表 HTML 文档中的“节”或“段”，“段”可以理解为一篇文章里按照主题的分段，“节”则可以理解为一个页面里的分组。其主要作用就是对页面的内容进行分块或者对文章的内容进行分段。<br><strong>3.</strong>  &lt;article&gt;    用于定义文章或者其它独立的信息，代表一个页面中自成一体的 内容，例如论坛的帖子、博客上的文章、一篇用户的评论等。<br><strong>4.</strong>  &lt;aside&gt;    用于定义网页内容以外的部分，例如网页的侧边栏。<br><strong>5.</strong>  &lt;footer&gt;    用于定义网页的底部，例如作者、版权等信息。<br><strong>6.</strong>  &lt;details&gt;    用于定义一些详细信息，并且可以根据需要隐藏或显示这些详细信息。<br><strong>7.</strong>  &lt;summary&gt;    用于为&lt;details&gt;标签定义标题。<br><strong>8.</strong>  &lt;header&gt;用于定义网页的头部，头部中一般包含一些介绍性的内容，例如网站名称、logo 或者作者的信息。</li>
-<li>头部&lt;head&gt;标签<br><strong>1.&lt;title&gt;</strong>   标签用来定义 HTML 文档的标题，只有包含 &lt;title&gt; 标签的文档才算是一个有效的 HTML 文档。另外，一个 HTML 文档中仅允许存在一个 &lt;title&gt; 标签，并且 &lt;title&gt;   标签必须放置在 &lt;head&gt; 标签中。<br><strong>2.&lt;base&gt;</strong>  标签用于为页面中所有相对链接指定一个基本链接，当您设置了基本链接后，当前页面中的所有相对链接都会使用这个基本链接作为前缀<br><strong>3.&lt;link&gt;</strong>   标签经常用于引用外部 CSS 样式表，&lt;link&gt; 标签中包含两个主要的属性，分别是 rel 和 href。rel 属性用来指示引用文件的类型，href 属性用来设置外部文件的路径。<br><strong>4.</strong>  使用 &lt;style&gt; 标签可以在 HTML 文档中嵌入 CSS 样式</li>
+        <h1 id="Javascript-小记"><a href="#Javascript-小记" class="headerlink" title="Javascript 小记"></a>Javascript 小记</h1><p>#(严格区分大小写，弱类型)   </p>
+<hr>
+<h2 id="在Html文件中嵌入Javascript"><a href="#在Html文件中嵌入Javascript" class="headerlink" title="在Html文件中嵌入Javascript"></a>在Html文件中嵌入Javascript</h2><p>1.在 HTML 页面中嵌入 JavaScript 脚本需要使用 &lt;script&gt; 标签，用户可以在 &lt;script&gt; 标签中直接编写 JavaScript 代码</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+   /*  javascript代码  */
+&lt;/script&gt;
+</code></pre>
+<p>2.脚本文件</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;test.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<span id="more"></span>
+<hr>
+<h2 id="JS变量定义与赋值"><a href="#JS变量定义与赋值" class="headerlink" title="JS变量定义与赋值"></a>JS变量定义与赋值</h2><p>let 和 const</p>
+<ul>
+<li><p>使用 let 关键字声明的变量只在其所在的代码块中有效（类似于局部变量），并且在这个代码块中，同名的变量不能重复声明；(let没有变量提升问题)</p>
+</li>
+<li><p>const 关键字的功能和 let 相同，但使用 const 关键字声明的变量还具备另外一个特点，那就是 const 关键字定义的变量，一旦定义，就不能修改（即使用 const 关键字定义的为常量）。</p>
+<pre><code>  &lt;script type =&quot;text/javascript&quot;&gt;
+  var arr=[];
+  for(var i=0;i&lt;10;i++)
+  &#123;    
+  
+      arr[i]=function()&#123;
+          console.log(i);
+      &#125;
+      
+  &#125;
+  arr[2]();
+  &lt;/script&gt;
+</code></pre>
+</li>
 </ul>
+<p>let：使用 let 关键字声明的变量只在其所在的代码块中有效（类似于局部变量），并且在这个代码块中，同名的变量不能重复声明；<br>const：常量  </p>
+<hr>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>JavaScript 中的数据类型可以分为两种类型：</p>
+<ul>
+<li>基本数据类型（值类型）：字符串（String）、数字（Number）、布尔（Boolean）、空（Null）、未定义（Undefined）、Symbol；</li>
+<li>引用数据类型：对象（Object）、数组（Array）、函数（Function）。<br>Symbol<pre><code>  var str = &quot;123&quot;;
+  var sym1 = Symbol(str);
+  var sym2 = Symbol(str);
+  console.log(sym1);          // 输出 Symbol(123)
+  console.log(sym2);          // 输出 Symbol(123)
+  console.log(sym1 == sym2);  // 输出 false ：虽然 sym1 与 sym2 看起来是相同的，但实际上它们并不一样，根据 Symbol 类型的特点，sym1 和 sym2 都是独一无二的
+</code></pre>
+Object:类似结构体<br>Array：类似集合</li>
+</ul>
+<hr>
+<h2 id="输出语句"><a href="#输出语句" class="headerlink" title="输出语句"></a>输出语句</h2><ol>
+<li>使用 alert() 函数来弹出提示框；</li>
+<li>使用 confirm() 函数来弹出一个对话框；//与aletr()区别在于多一个取消按钮</li>
+<li>使用 document.write() 方法将内容写入到 HTML 文档中；</li>
+<li>使用 innerHTML 将内容写入到 HTML 标签中；是一个属性</li>
+<li>使用 console.log() 在浏览器的控制台输出内容。</li>
+</ol>
+<hr>
+<h2 id="for-in"><a href="#for-in" class="headerlink" title="for in"></a>for in</h2><pre><code>    // 定义一个对象
+    var person = &#123;&quot;name&quot;: &quot;Clark&quot;, &quot;surname&quot;: &quot;Kent&quot;, &quot;age&quot;: &quot;36&quot;&#125;;
+    // 遍历对象中的所有属性
+    for(var prop in person) &#123;
+        document.write(&quot;&lt;p&gt;&quot; + prop + &quot; = &quot; + person[prop] + &quot;&lt;/p&gt;&quot;);
+    &#125;
+</code></pre>
+<p>prop 为一个变量，每次循环时这个变量都会被赋予不同的值，我们可以在{ }中使用这个变量来进行一系列操作；object 为要遍历的对象，在每次循环中，会将 object 对象中的一个属性的键赋值给变量 prop，直到对象中的所有属性都遍历完。</p>
+<hr>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>定义函数时，可以为函数的参数设置一个默认值。<br>函数声明！=函数表达式</p>
+<hr>
+<h2 id="JS-事件处理"><a href="#JS-事件处理" class="headerlink" title="JS 事件处理"></a>JS 事件处理</h2><p>JS 事件（event）是当用户与网页进行交互时发生的事情，例如单机某个链接或按钮、在文本框中输入文本、按下键盘上的某个按键、移动鼠标等等。当事件发生时，您可以使用 JavaScript 中的事件处理程序（也可称为事件监听器）来检测并执行某些特定的程序。  </p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>鼠标、键盘事件</td>
+<td></td>
+</tr>
+<tr>
+<td>onclick</td>
+<td>点击鼠标时触发此事件</td>
+</tr>
+<tr>
+<td>ondblclick</td>
+<td>双击鼠标时触发此事件</td>
+</tr>
+<tr>
+<td>onmousedown</td>
+<td>按下鼠标时触发此事件</td>
+</tr>
+<tr>
+<td>onmouseup</td>
+<td>鼠标按下后又松开时触发此事件</td>
+</tr>
+<tr>
+<td>onmouseover</td>
+<td>当鼠标移动到某个元素上方时触发此事件</td>
+</tr>
+<tr>
+<td>onmousemove</td>
+<td>移动鼠标时触发此事件</td>
+</tr>
+<tr>
+<td>onmouseout</td>
+<td>当鼠标离开某个元素范围时触发此事件</td>
+</tr>
+<tr>
+<td>onkeypress</td>
+<td>当按下并松开键盘上的某个键时触发此事件</td>
+</tr>
+<tr>
+<td>onkeydown</td>
+<td>当按下键盘上的某个按键时触发此事件</td>
+</tr>
+<tr>
+<td>onkeyup</td>
+<td>当放开键盘上的某个按键时触发此事件</td>
+</tr>
+<tr>
+<td>窗口事件</td>
+<td></td>
+</tr>
+<tr>
+<td>onabort</td>
+<td>图片在下载过程中被用户中断时触发此事件</td>
+</tr>
+<tr>
+<td>onbeforeunload</td>
+<td>当前页面的内容将要被改变时触发此事件</td>
+</tr>
+<tr>
+<td>onerror</td>
+<td>出现错误时触发此事件</td>
+</tr>
+<tr>
+<td>onload</td>
+<td>页面内容加载完成时触发此事件</td>
+</tr>
+<tr>
+<td>onmove</td>
+<td>当移动浏览器的窗口时触发此事件</td>
+</tr>
+<tr>
+<td>onresize</td>
+<td>当改变浏览器的窗口大小时触发此事件</td>
+</tr>
+<tr>
+<td>onscroll</td>
+<td>当滚动浏览器的滚动条时触发此事件</td>
+</tr>
+<tr>
+<td>onstop</td>
+<td>当按下浏览器的停止按钮或者正在下载的文件被中断时触发此事件</td>
+</tr>
+<tr>
+<td>oncontextmenu</td>
+<td>当弹出右键上下文菜单时触发此事件</td>
+</tr>
+<tr>
+<td>onunload</td>
+<td>改变当前页面时触发此事件</td>
+</tr>
+<tr>
+<td>表单事件</td>
+<td></td>
+</tr>
+<tr>
+<td>onblur</td>
+<td>当前元素失去焦点时触发此事件</td>
+</tr>
+<tr>
+<td>onchange</td>
+<td>当前元素失去焦点并且元素的内容发生改变时触发此事件</td>
+</tr>
+<tr>
+<td>onfocus</td>
+<td>当某个元素获得焦点时触发此事件</td>
+</tr>
+<tr>
+<td>onreset</td>
+<td>当点击表单中的重置按钮时触发此事件</td>
+</tr>
+<tr>
+<td>onsubmit</td>
+<td>当提交表单时触发此事件</td>
+</tr>
+</tbody></table>
 
       
 
@@ -251,7 +425,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/14/html%20%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/18/javascript%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,7 +439,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/01/14/css%20%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/01/18/c#%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -275,7 +449,7 @@
     </a>
   
   
-    <a href="/2022/01/13/%E6%88%91%E7%9A%84Markdown%E5%AD%A6%E4%B9%A0%E5%B0%8F%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/01/14/css%20%E5%A4%8D%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>

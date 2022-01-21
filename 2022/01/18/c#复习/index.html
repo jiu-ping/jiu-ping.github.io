@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>你好，九瓶</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="html 复习 盲点复习 &lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。 &lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表">
+  <meta name="description" content="C#复习 （大小写敏感） 数据类型在 C# 中，变量分为以下几种类型：  值类型（Value types）：System.ValueType中派生的  引用类型（Reference types）：object dynamic string">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你好，九瓶">
-<meta property="og:url" content="http://example.com/2022/01/14/html%20%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:url" content="http://example.com/2022/01/18/c#%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="你好，九瓶">
-<meta property="og:description" content="html 复习 盲点复习 &lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。 &lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表">
+<meta property="og:description" content="C#复习 （大小写敏感） 数据类型在 C# 中，变量分为以下几种类型：  值类型（Value types）：System.ValueType中派生的  引用类型（Reference types）：object dynamic string">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-14T09:04:52.205Z">
-<meta property="article:modified_time" content="2022-01-18T15:12:55.127Z">
+<meta property="article:published_time" content="2022-01-18T13:01:35.481Z">
+<meta property="article:modified_time" content="2022-01-19T10:42:20.723Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,24 +154,123 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-html 复习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-c#复习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="html-复习"><a href="#html-复习" class="headerlink" title="html 复习"></a>html 复习</h1><hr>
-<h2 id="盲点复习"><a href="#盲点复习" class="headerlink" title="盲点复习"></a>盲点复习</h2><ul>
-<li>&lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。</li>
-<li>&lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表示标签中的内容很重要，而&lt;i&gt;标签仅仅用于定义斜体文本。  </li>
-<li>浏览器根据历史记录来判断超链接是否被点击过，如果 href 属性和历史记录中的某条 URL 重合，那么说明该链接被点击了。清空浏览器的历史记录会让超链接的颜色再次变回蓝色。 <span id="more"></span> </li>
-<li>HTML5 中增加了&lt;picture&gt;标签<br><strong>1</strong>  .在 &lt;picture&gt; 标签中包含零个或多个 &lt;source&gt; 标签，通过 &lt;source&gt; 标签中的 media 属性可以设定匹配条件（允许哪个版本的图片显示），通过 srcset 属性可以定义图片的路径。另外，在 &lt;picture&gt; 标签的最后还需要定义一个 &lt;img&gt; 标签<br><strong>2</strong>  .浏览器将评估每个 &lt;source&gt; 标签，并在其中选择最合适的 &lt;source&gt; 标签，如果未找到匹配项，则使用&lt;img&gt; 标签所定义的图片。另外，&lt;img&gt; 必须是\ <picture> 标签的最后一个子元素。   </li>
-<li><strong>1</strong>  .&lt;caption&gt; &lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;<br><strong>2</strong>  .属性：rowspan 属性表示向下合并单元格，colspan 属性表示向右合并单元格。<br><strong>3</strong>  .每次合并 n 个单元格都要少写 n-1 个&lt;td&gt;标签。<br><strong>4</strong>  .即使一个单元格中没有任何内容，我们仍需使用 <td> 或 <th> 元素来表示一个空单元格的存在，建议在 <td> 或 <th> 中加入 &nbsp;（空格），否则低版本的 IE 可能无法显示出这个单元格的边框。</li>
-<li>&lt;dl&gt; &lt;dt&gt; &lt;dd&gt;  </li>
-<li>&lt;form&gt; action 属性用来指明将表单提交到哪个页面；<br>method 属性表示使用哪个方式提交数据，包括 GET 和 POST 两种方式，它们两者的区别如下：<br><strong>1</strong>  .GET：用户点击提交按钮后，提交的信息会被显示在页面的地址栏中。一般情况下，GET 提交方式中不建议包含密码，因为密码被提交到地址栏，不安全。<br><strong>2</strong>  .POST：如果表单包含密码这种敏感信息，建议使用 POST 方式进行提交，这样数据会传送到后台，不显示在地址栏中，相对安全。<br><strong>3.</strong>  &lt;label&gt;    为表单中的各个控件定义标题<br><strong>4.</strong>  &lt;input&gt;    定义输入框<br><strong>5.</strong>  &lt;textarea&gt;    定义文本域（一个可以输入多行文本的控件）<br><strong>6.</strong>  &lt;select&gt;    定义下拉列表<br><strong>7.</strong>  &lt;option&gt;    定义下拉列表中的选项<br><strong>8.</strong>  &lt;button&gt;    定义一个可以点击的按钮</li>
-<li>嵌入css：<strong>链接式</strong>  &lt;  **link**  href=”名称” type=”text/css” rel=”stylesheet” /&gt;<br><strong>导入样式</strong>  使用 @import 命令导入外部样式表。<br>&lt;  style   type=”text/css”&gt; @import url(daoru.css);&lt;/  style &gt;</li>
-<li>html布局：<br><strong>1.</strong>  &lt;nav&gt;    用于定义网页中的导航栏。<br><strong>2.</strong>  &lt;section&gt;代表 HTML 文档中的“节”或“段”，“段”可以理解为一篇文章里按照主题的分段，“节”则可以理解为一个页面里的分组。其主要作用就是对页面的内容进行分块或者对文章的内容进行分段。<br><strong>3.</strong>  &lt;article&gt;    用于定义文章或者其它独立的信息，代表一个页面中自成一体的 内容，例如论坛的帖子、博客上的文章、一篇用户的评论等。<br><strong>4.</strong>  &lt;aside&gt;    用于定义网页内容以外的部分，例如网页的侧边栏。<br><strong>5.</strong>  &lt;footer&gt;    用于定义网页的底部，例如作者、版权等信息。<br><strong>6.</strong>  &lt;details&gt;    用于定义一些详细信息，并且可以根据需要隐藏或显示这些详细信息。<br><strong>7.</strong>  &lt;summary&gt;    用于为&lt;details&gt;标签定义标题。<br><strong>8.</strong>  &lt;header&gt;用于定义网页的头部，头部中一般包含一些介绍性的内容，例如网站名称、logo 或者作者的信息。</li>
-<li>头部&lt;head&gt;标签<br><strong>1.&lt;title&gt;</strong>   标签用来定义 HTML 文档的标题，只有包含 &lt;title&gt; 标签的文档才算是一个有效的 HTML 文档。另外，一个 HTML 文档中仅允许存在一个 &lt;title&gt; 标签，并且 &lt;title&gt;   标签必须放置在 &lt;head&gt; 标签中。<br><strong>2.&lt;base&gt;</strong>  标签用于为页面中所有相对链接指定一个基本链接，当您设置了基本链接后，当前页面中的所有相对链接都会使用这个基本链接作为前缀<br><strong>3.&lt;link&gt;</strong>   标签经常用于引用外部 CSS 样式表，&lt;link&gt; 标签中包含两个主要的属性，分别是 rel 和 href。rel 属性用来指示引用文件的类型，href 属性用来设置外部文件的路径。<br><strong>4.</strong>  使用 &lt;style&gt; 标签可以在 HTML 文档中嵌入 CSS 样式</li>
+        <h1 id="C-复习-（大小写敏感）"><a href="#C-复习-（大小写敏感）" class="headerlink" title="C#复习 （大小写敏感）"></a>C#复习 （大小写敏感）</h1><hr>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>在 C# 中，变量分为以下几种类型：</p>
+<ul>
+<li><p>值类型（Value types）：System.ValueType中派生的</p>
+</li>
+<li><p>引用类型（Reference types）：object dynamic string  </p>
+<span id="more"></span>
+<p><strong>对象（Object）类型</strong></p>
+<ul>
+<li><p>对象（Object）类型 是 C# 通用类型系统（Common Type System - CTS）中所有数据类型的终极基类。Object 是 System.Object 类的别名。所以对象（Object）类型可以被分配任何其他类型（值类型、引用类型、预定义类型或用户自定义类型）的值。但是，在分配值之前，需要先进行类型转换。</p>
+</li>
+<li><p>当一个值类型转换为对象类型时，则被称为 装箱；另一方面，当一个对象类型转换为值类型时，则被称为 拆箱。  </p>
+</li>
+<li><p><em>动态（Dynamic）类型</em>*</p>
+</li>
+<li><p> 您可以存储任何类型的值在动态数据类型变量中。    </p>
+</li>
 </ul>
+<p><strong>对象类型与动态类型的区别</strong>  </p>
+<ul>
+<li><p>动态类型与对象类型相似，但是对象类型变量的类型检查是在编译时发生的，而动态类型变量的类型检查是在运行时发生的。  </p>
+</li>
+<li><p><em>字符串类型</em>*</p>
+</li>
+<li><p>  字符串（String）类型是 System.String 类的别名。它是从对象（Object）类型派生的。</p>
+</li>
+<li><p>@称作“逐字字符串”，将字符串中所有\当做普通字符对待。  </p>
+<pre><code>   string str = @&quot;C:\Windows&quot;;  //二者等价
+   string str = &quot;C:\\Windows&quot;;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>指针类型（Pointer types）（好像没啥用，跳过）</p>
+</li>
+</ul>
+<hr>
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><ul>
+<li>隐式类型转换 - 这些转换是 C# 默认的以安全方式进行的转换, 不会导致数据丢失。例如，从小的整数类型转换为大的整数类型，从派生类转换为基类。</li>
+<li>显式类型转换 - 显式类型转换，即强制类型转换。显式转换需要强制转换运算符，而且强制转换会造成数据丢失。  </li>
+</ul>
+<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><p>C#支持五种访问修饰符：  </p>
+<ul>
+<li>public：所有对象都可以访问；</li>
+<li>private：对象本身在对象内部可以访问；</li>
+<li>protected：只有该类对象及其子类对象可以访问</li>
+<li>internal：同一个程序集的对象可以访问；</li>
+<li>protected internal：访问限于当前程序集或派生自包含类的类型。  </li>
+</ul>
+<hr>
+<h2 id="C-中参数传递的方式"><a href="#C-中参数传递的方式" class="headerlink" title="C#中参数传递的方式"></a>C#中参数传递的方式</h2><ul>
+<li><p>值传递：没啥说的 内外不影响</p>
+</li>
+<li><p>引用传递： 关键字 ref 对变量内存位置的引用 内外引用</p>
+</li>
+<li><p>输出传递： 关键字 out 把方法输出的数据赋给方法外的变量</p>
+<pre><code>   public void getValue(out int x )
+&#123;
+   int temp = 5;
+   x = temp;
+&#125;
+
+static void Main(string[] args)
+&#123;
+   NumberManipulator n = new NumberManipulator();
+   /* 局部变量定义 */
+   int a = 100;
+   
+   Console.WriteLine(&quot;在方法调用之前，a 的值： &#123;0&#125;&quot;, a);
+   
+   /* 调用函数来获取值 */
+   n.getValue(out a);
+
+   Console.WriteLine(&quot;在方法调用之后，a 的值： &#123;0&#125;&quot;, a);
+   Console.ReadLine();
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="可空类型-Nullable"><a href="#可空类型-Nullable" class="headerlink" title="可空类型(Nullable)"></a>可空类型(Nullable)</h2><pre><code>            int i;//默认值0
+            int? ii;//默认值null
+</code></pre>
+<ul>
+<li><p>可空类型可以表示其基础值类型正常范围内的值，再加上一个 null 值</p>
+</li>
+<li><p>合并运算符 ??<br>如果第一个操作数的值为 null，则运算符返回第二个操作数的值，否则返回第一个操作数的值。  </p>
+<pre><code>num3 = num1 ?? 5.34;      // num1 如果为空值则返回 5.34
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><p>类和结构有以下几个基本的  <strong>不同点</strong>  ：</p>
+<ul>
+<li>类是引用类型，结构是值类型。</li>
+<li>结构不支持继承。</li>
+<li>结构不能声明默认的构造函数。</li>
+</ul>
+<hr>
+<h2 id="枚举-枚举变量要“点”出来"><a href="#枚举-枚举变量要“点”出来" class="headerlink" title="枚举 枚举变量要“点”出来"></a>枚举 枚举变量要“点”出来</h2><p>例：</p>
+<pre><code>    enum Days &#123; Sun, Mon, tue, Wed, thu, Fri, Sat &#125;;
+    int x = (int)Day.Sun;
+    Console.WriteLine(&quot;Sun = &#123;0&#125;&quot;, x);
+    //Sun=0
+</code></pre>
+<hr>
+<h2 id="静态成员"><a href="#静态成员" class="headerlink" title="静态成员"></a>静态成员</h2><p>static 当我们声明一个类成员为静态时，意味着无论有多少个类的对象被创建，只会有一个该静态成员的副本。<br>  <strong>直接调用类而不需要创建类的实例来获取</strong>  </p>
+<hr>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>C#不支持多类继承继承，但可以通过接口(interface)实现。</p>
+<hr>
+<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>接口本身并不实现任何功能，它只是和声明实现该接口的对象订立一个必须实现哪些行为的契约。<br>抽象类不能直接实例化，但允许派生出具体的，具有实际功能的类。<br>通常接口命令以  <strong>I</strong>  字母开头</p>
+<h3 id="继承接口"><a href="#继承接口" class="headerlink" title="继承接口"></a>继承接口</h3><p>继承该接口的类要对其中函数进行实例化</p>
+<h3 id="接口继承"><a href="#接口继承" class="headerlink" title="接口继承"></a>接口继承</h3><p>如果一个接口继承其他接口，那么实现类或结构就需要实现所有接口的成员。</p>
 
       
 
@@ -251,7 +350,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/14/html%20%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/18/c#%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,17 +364,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/01/14/css%20%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/01/13/%E6%88%91%E7%9A%84Markdown%E5%AD%A6%E4%B9%A0%E5%B0%8F%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/01/18/javascript%E5%A4%8D%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
