@@ -15,10 +15,13 @@
 <meta property="og:site_name" content="你好，九瓶">
 <meta property="og:description" content="Javascript 小记#(严格区分大小写，弱类型)     在Html文件中嵌入Javascript1.在 HTML 页面中嵌入 JavaScript 脚本需要使用 &lt;script&gt; 标签，用户可以在 &lt;script&gt; 标签中直接编写 JavaScript 代码 &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;    &#x2F;*">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210923/1F43553F-0.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210927/09343I303-0.gif">
 <meta property="article:published_time" content="2022-01-18T01:48:58.974Z">
-<meta property="article:modified_time" content="2022-01-21T08:52:10.386Z">
+<meta property="article:modified_time" content="2022-01-23T12:56:47.070Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://c.biancheng.net/uploads/allimg/210923/1F43553F-0.gif">
   
     <link rel="alternative" href="/atom.xml" title="你好，九瓶" type="application/atom+xml">
   
@@ -346,6 +349,144 @@ Object:类似结构体<br>Array：类似集合</li>
 <td>当提交表单时触发此事件</td>
 </tr>
 </tbody></table>
+<hr>
+<h2 id="对象的创建与使用"><a href="#对象的创建与使用" class="headerlink" title="对象的创建与使用"></a>对象的创建与使用</h2><p>var 声明<br>访问对象属性时，对象名.属性名最常用，若属性名中包含空格或者特殊字符必须使用对象名[“属性名”]。<br>将属性名赋值给变量后，还可以通过第二种方法利用变量访问属性名<br>delete是删除指定属性的唯一方式，设置undefined或null仅更改属性值<br>调用方法与调用属性同理。</p>
+<hr>
+<h2 id="数字对象"><a href="#数字对象" class="headerlink" title="数字对象"></a>数字对象</h2><p>Infinty 正无穷 isFinite()判断是否有穷<br>-Infinty 负无穷<br>NaN 非数字 isNaN()判断是否为NaN</p>
+<pre><code>var a = new Number(&quot;123&quot;);
+var b = Number(&quot;456&quot;);
+var c = 789;
+var d = new Number(&quot;abc&quot;);
+document.write(typeof a + &quot;&lt;br&gt;&quot;);      // 输出：object
+document.write(typeof b + &quot;&lt;br&gt;&quot;);      // 输出：number
+document.write(typeof c + &quot;&lt;br&gt;&quot;);      // 输出：number
+document.write(d + &quot;&lt;br&gt;&quot;);             // 输出：NaN
+</code></pre>
+<hr>
+<h2 id="string对象"><a href="#string对象" class="headerlink" title="string对象"></a>string对象</h2><p>JavaScript 中，字符串和字符串对象之间能够自由转换，因此不论是创建字符串对象还是直接声明字符串类型的变量，都可以直接使用字符串对象中提供的方法和属性。</p>
+<hr>
+<h2 id="数组对象"><a href="#数组对象" class="headerlink" title="数组对象"></a>数组对象</h2><pre><code>var array = new Array(value);
+//若value的值为单一数值，则为规定数组的最大长度
+</code></pre>
+<hr>
+<h2 id="时间对象"><a href="#时间对象" class="headerlink" title="时间对象"></a>时间对象</h2><pre><code>1. var time = new Data();
+//不提供参数：若调用 Date() 函数时不提供参数，则创建一个包含当前时间和日期的 Date 对象；
+2. var time = new Date(milliseconds);
+//milliseconds（毫秒）：若提供一个数值作为参数，则会将这个参数视为一个以毫秒为单位的时间值，并返回自 1970-01-01 00:00:00 起，经过指定毫秒数的时间，例如 new Date(5000) 会返回一个 1970-01-01 00:00:00 经过 5000 毫秒之后的时间；
+3. var time = new Date(datestring);
+datestring（日期字符串）：若提供一个字符串形式的日期作为参数，则会将其转换为具体的时间，日期的字符串形式有两种，如下所示：
+YYYY/MM/dd HH:mm:ss（推荐）：若省略时间部分，则返回的 Date 对象的时间为 00:00:00；
+YYYY-MM-dd HH:mm:ss：若省略时间部分，则返回的 Date 对象的时间为 08:00:00（加上本地时区），若不省略，在 IE 浏览器中会转换失败。
+4. var time = new Date(year, month, date[, hour, minute, second, millisecond]);
+year：表示年，为了避免错误的产生，推荐使用四位的数字来表示年份；
+month：表示月，0 代表 1 月，1 代表 2 月，以此类推；
+date：表示月份中的某一天，1 代表 1 号，2 代表 2 号，以此类推；
+hour：表示时，以 24 小时制表示，取值范围为 0 ~ 23；
+minute：表示分，取值范围为 0 ~ 59；
+second：表示秒，取值范围为 0 ~ 59；
+millisecond：表示毫秒，取值范围为 0 ~ 999。
+</code></pre>
+<hr>
+<h2 id="Math-对象"><a href="#Math-对象" class="headerlink" title="Math 对象"></a>Math 对象</h2><p>调用Math对象无需创建，直接作为对象调用即可<br>其中属性为一些值，方法为一些公式</p>
+<hr>
+<h2 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h2><p>需要创建RegExp对象来使用正则表达式，要创建RegExp有两种方法：</p>
+<pre><code>var patt = new RegExp(pattern, modifiers);
+var patt = /pattern/modifiers;
+</code></pre>
+<p>pattern:正则表达式<br>modifiers:修饰符，设置匹配模式</p>
+<table>
+<thead>
+<tr>
+<th>修饰符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>i</td>
+<td>执行对大小写不敏感的匹配</td>
+</tr>
+<tr>
+<td>g</td>
+<td>执行全局匹配（查找所有的匹配项，而非在找到第一个匹配项后停止）</td>
+</tr>
+<tr>
+<td>m</td>
+<td>执行多行匹配</td>
+</tr>
+<tr>
+<td>s</td>
+<td>允许使用.匹配换行符</td>
+</tr>
+<tr>
+<td>u</td>
+<td>使用 Unicode 码的模式进行匹配</td>
+</tr>
+<tr>
+<td>y</td>
+<td>执行“粘性”搜索，匹配从目标字符串的当前位置开始</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="DOM-文档对象模型"><a href="#DOM-文档对象模型" class="headerlink" title="DOM(文档对象模型)"></a>DOM(文档对象模型)</h2><p><img src="http://c.biancheng.net/uploads/allimg/210923/1F43553F-0.gif" alt="DOM"></p>
+<h5 id="Document对象"><a href="#Document对象" class="headerlink" title="Document对象"></a>Document对象</h5><p>当浏览器加载一个HTML文档时，会创建一个Document对象，Document对象时DOM树中所有节点的根节点，通过该对象我们可以访问HTML中文档中的所有元素。</p>
+<blockquote>
+<p>该对象时Window对象的一部分，所以可以通过window.document来访问该对象</p>
+</blockquote>
+<p>元素对象   元素属性对象</p>
+<hr>
+<h2 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h2><p>window 对象是 BOM 的核心，用来表示当前浏览器窗口，其中提供了一系列用来操作或访问浏览器的方法和属性。另外，JavaScript 中的所有全局对象、函数以及变量也都属于 window 对象，甚至我们前面介绍的 document 对象也属于 window 对象。</p>
+<blockquote>
+<p>注意：如果 HTML 文档中包含框架（&lt;frame&gt; 或 &lt;iframe&gt; 标签），浏览器会为 HTML 文档创建一个 window 对象的同时，为每个框架创建一个额外的 window 对象。</p>
+</blockquote>
+<hr>
+<h2 id="navigator-获取浏览器信息"><a href="#navigator-获取浏览器信息" class="headerlink" title="navigator 获取浏览器信息"></a>navigator 获取浏览器信息</h2><p>我们通过window对象navigator属性调用navigator对象</p>
+<hr>
+<h2 id="Screen-获取屏幕信息"><a href="#Screen-获取屏幕信息" class="headerlink" title="Screen 获取屏幕信息"></a>Screen 获取屏幕信息</h2><hr>
+<h2 id="Location-获取：URL"><a href="#Location-获取：URL" class="headerlink" title="Location 获取：URL"></a>Location 获取：URL</h2><hr>
+<h2 id="history-获取浏览历史"><a href="#history-获取浏览历史" class="headerlink" title="history 获取浏览历史"></a>history 获取浏览历史</h2><p>包含了用户在浏览器中访问过的历史记录，其中包括通过浏览器浏览过的页面，以及当前页面中通过&lt;iframe&gt;加载的页面。</p>
+<h2 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h2><p>setTimeout,setInterval,cleatTimeout,clearInterval</p>
+<p>setTimeout:用于在指定时间后执行某些代码，代码仅执行一次</p>
+<blockquote>
+<p>setTimeout(function[, delay, arg1, arg2, …]);</p>
+</blockquote>
+<p>setInterval：按照指定的周期来重复某些代码，定时器不会自动停止，除非调用<br>clearInterval()函数来手动停止或着关闭浏览器窗口</p>
+<blockquote>
+<p>setInterval(function, delay, [arg1, arg2, …]);</p>
+</blockquote>
+<h5 id="取消定时器"><a href="#取消定时器" class="headerlink" title="取消定时器"></a>取消定时器</h5><p>使用 setTimeout() 或 setInterval() 设置定时器时，这两个方法都会产生一个定时器的唯一 ID，ID 为一个正整数值，也被称为“定时器标识符”，通过这个 ID，我们可以清除 ID 所对应的定时器。</p>
+<hr>
+<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><p>try，catch，finally，throw<br>finall：无论代码是否错误，finally都会执行<br>throw：主动抛出异常</p>
+<hr>
+<h2 id="动画处理"><a href="#动画处理" class="headerlink" title="动画处理"></a>动画处理</h2><p>如今，大多数显示器的刷新率为 60HZ，为了实现更加平滑的动画效果，使用定时器的最佳循环间隔约为 17ms。</p>
+<hr>
+<h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><p>除了借助浏览器调试工具设置断点外，也可以使用debugger关键字在代码中设置断点。</p>
+<hr>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>所谓闭包，指的就是一个函数。当两个函数彼此嵌套时，内部的函数就是闭包</p>
+<p>当我们需要在函数中定义一些变量，并且希望这些变量能够一直保存在内存中，同时不影响函数外的全局变量时，就可以使用闭包。</p>
+<hr>
+<h2 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h2><p>将”use strict”;指令添加到 JavaScript 程序的第一行，则表示整个脚本都会处于严格模式。如果在函数的第一行代码中添加”use strict”;，则表示只在该函数中启用严格模式。</p>
+<blockquote>
+<p>1、不允许使用未声明的变量<br>2、不允许删除变量或函数<br>3、函数中不允许有同名的参数<br>4、eval 语句的作用域是独立的<br>5、不允许使用 with 语句<br>6、不允许写入只读属性<br>7、不允许使用八进制数<br>8、不能在 if 语句中声明函数<br>9、禁止使用 this 表示全局对象</p>
+</blockquote>
+<hr>
+<h2 id="解析JSON"><a href="#解析JSON" class="headerlink" title="解析JSON"></a>解析JSON</h2><p>JSON 全称为“JavaScript Object Notation”，是当前最流行的一种轻量级的数据交换格式，用来存储和传输数据，通常服务器端与客户端在进行交互时就是使用 JSON 格式的数据。<br>JSON有两种基本结构：<strong>对象{}</strong>  ， <strong>数组[]</strong><br>在 JSON 中，属性名称或键都是字符串格式的（需要使用英文的双引号括起来），而值则可以是任意类型</p>
+<p>利用JSON.parse()解析JSON数据<br>利用for循环解析嵌套JSON数据<br>JSON.stringify()方法来将 JavaScript 值转换为 JSON 格式</p>
+<blockquote>
+<p>在JSON中属性名称必须用双引号括起来</p>
+</blockquote>
+<hr>
+<h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><hr>
+<h2 id="Ajax请求"><a href="#Ajax请求" class="headerlink" title="Ajax请求"></a>Ajax请求</h2><p>Ajax 全称“Asynchronous JavaScript and XML”，译为“异步 JavaScript 和 XML”，程序员们习惯称之为“阿贾克斯”，它并不是一种技术，而是多种技术的综合体，其中包括 JavaScript、XML、JSON、DOM、CSS、HTML 以及最重要的 XMLHttpRequest 对象。通过 Ajax 可以异步从服务器请求数据并将数据更新到网页中，整个过程不需要重载（刷新）整个网页，可以将网页的内容更快的呈现给用户。<br>这里的  <strong>异步</strong>  是指，当程序执行到 Ajax 代码时，将 Ajax 代码交给另外一个线程来执行，不论执行结果如何，当前线程会继续向下执行。</p>
+<blockquote>
+<p>提示：虽然 X 在 Ajax 中代表 XML，但是由于 JSON 的诸多优势（比如 JSON 属于 JavaScript 的一部分，而且更加轻量），目前 Ajax 中普遍使用 JSON 来传输数据。</p>
+</blockquote>
+<p><img src="http://c.biancheng.net/uploads/allimg/210927/09343I303-0.gif" alt="Ajax"></p>
+<p>因为 Ajax 请求是异步执行的，Ajax 请求发送之后，代码会继续向下执行，直至结束。</p>
+<p>(暂时不谈细节)</p>
+<hr>
+<h2 id="事件的捕捉和冒泡"><a href="#事件的捕捉和冒泡" class="headerlink" title="事件的捕捉和冒泡"></a>事件的捕捉和冒泡</h2><hr>
+<h2 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h2><p>事件委托就是把原本需要绑定在子元素上的事件（onclick、onkeydown 等）委托给它的父元素，让父元素来监听子元素的冒泡事件，并在子元素发生事件冒泡时找到这个子元素。</p>
+<hr>
 
       
 
