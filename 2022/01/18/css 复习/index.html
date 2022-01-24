@@ -6,19 +6,35 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>你好，九瓶</title>
+  <title>CSS复习 | 你好，九瓶</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="html 复习 盲点复习 &lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。 &lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表">
+  <meta name="description" content="css 复习 选择器 通用选择器 标签选择器 ID 选择器 类选择器 后代选择器 子选择器 相邻兄弟选择器   通用兄弟选择器 分组选择器 属性选择器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你好，九瓶">
-<meta property="og:url" content="http://example.com/2022/01/14/html%20%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:title" content="CSS复习">
+<meta property="og:url" content="http://example.com/2022/01/18/css%20%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="你好，九瓶">
-<meta property="og:description" content="html 复习 盲点复习 &lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。 &lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表">
+<meta property="og:description" content="css 复习 选择器 通用选择器 标签选择器 ID 选择器 类选择器 后代选择器 子选择器 相邻兄弟选择器   通用兄弟选择器 分组选择器 属性选择器">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-14T09:04:52.205Z">
-<meta property="article:modified_time" content="2022-01-18T15:12:55.127Z">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210806/1113593623-9.png">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210806/145231E13-0.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U46022-0.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U424H-1.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U43X5-2.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U46010-3.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U42506-4.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U45956-5.png">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/104U4B28-6.png">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/110131OI-0.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210809/15324912F-2.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210810/1112331T9-0.gif">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/210810/1504491454-0.gif">
+<meta property="article:published_time" content="2022-01-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-24T05:13:51.125Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://c.biancheng.net/uploads/allimg/210806/1113593623-9.png">
   
     <link rel="alternative" href="/atom.xml" title="你好，九瓶" type="application/atom+xml">
   
@@ -29,7 +45,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#ccc,#1c172d);
     }
   </style>
   
@@ -43,15 +59,18 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<!-- <div class="overlay" style="background: #4d4d4d"></div> -->
+<div class=“overlay” ></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			<img src="/img/ywh.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href="/">九瓶</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">你却说花花世界不必当真</p>
 		
 
 		<nav class="header-menu">
@@ -108,8 +127,10 @@
 				<img src="/img/ywh.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">九瓶</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>你却说花花世界不必当真<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -154,25 +175,875 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-html 复习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css 复习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS复习
+    </h1>
+  
+
+        
+        <a href="/2022/01/18/css%20%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2022-01-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-18</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="html-复习"><a href="#html-复习" class="headerlink" title="html 复习"></a>html 复习</h1><hr>
-<h2 id="盲点复习"><a href="#盲点复习" class="headerlink" title="盲点复习"></a>盲点复习</h2><ul>
-<li>&lt;strong&gt;和&lt;b&gt;标签都可以使文本以粗体展示标签中的文本，但是&lt;strong&gt;标签的语义是标签中的内容具有很高的重要性，而&lt;b&gt;标签的语义仅仅是加粗文本以引起读者的注意，并没有特殊的意思。</li>
-<li>&lt;em&gt;和&lt;i&gt;标签默认情况下均以斜体显示标签中的文本，但是&lt;em&gt;标签具有强调的语义，用来表示标签中的内容很重要，而&lt;i&gt;标签仅仅用于定义斜体文本。  </li>
-<li>浏览器根据历史记录来判断超链接是否被点击过，如果 href 属性和历史记录中的某条 URL 重合，那么说明该链接被点击了。清空浏览器的历史记录会让超链接的颜色再次变回蓝色。 <span id="more"></span> </li>
-<li>HTML5 中增加了&lt;picture&gt;标签<br><strong>1</strong>  .在 &lt;picture&gt; 标签中包含零个或多个 &lt;source&gt; 标签，通过 &lt;source&gt; 标签中的 media 属性可以设定匹配条件（允许哪个版本的图片显示），通过 srcset 属性可以定义图片的路径。另外，在 &lt;picture&gt; 标签的最后还需要定义一个 &lt;img&gt; 标签<br><strong>2</strong>  .浏览器将评估每个 &lt;source&gt; 标签，并在其中选择最合适的 &lt;source&gt; 标签，如果未找到匹配项，则使用&lt;img&gt; 标签所定义的图片。另外，&lt;img&gt; 必须是\ <picture> 标签的最后一个子元素。   </li>
-<li><strong>1</strong>  .&lt;caption&gt; &lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;<br><strong>2</strong>  .属性：rowspan 属性表示向下合并单元格，colspan 属性表示向右合并单元格。<br><strong>3</strong>  .每次合并 n 个单元格都要少写 n-1 个&lt;td&gt;标签。<br><strong>4</strong>  .即使一个单元格中没有任何内容，我们仍需使用 <td> 或 <th> 元素来表示一个空单元格的存在，建议在 <td> 或 <th> 中加入 &nbsp;（空格），否则低版本的 IE 可能无法显示出这个单元格的边框。</li>
-<li>&lt;dl&gt; &lt;dt&gt; &lt;dd&gt;  </li>
-<li>&lt;form&gt; action 属性用来指明将表单提交到哪个页面；<br>method 属性表示使用哪个方式提交数据，包括 GET 和 POST 两种方式，它们两者的区别如下：<br><strong>1</strong>  .GET：用户点击提交按钮后，提交的信息会被显示在页面的地址栏中。一般情况下，GET 提交方式中不建议包含密码，因为密码被提交到地址栏，不安全。<br><strong>2</strong>  .POST：如果表单包含密码这种敏感信息，建议使用 POST 方式进行提交，这样数据会传送到后台，不显示在地址栏中，相对安全。<br><strong>3.</strong>  &lt;label&gt;    为表单中的各个控件定义标题<br><strong>4.</strong>  &lt;input&gt;    定义输入框<br><strong>5.</strong>  &lt;textarea&gt;    定义文本域（一个可以输入多行文本的控件）<br><strong>6.</strong>  &lt;select&gt;    定义下拉列表<br><strong>7.</strong>  &lt;option&gt;    定义下拉列表中的选项<br><strong>8.</strong>  &lt;button&gt;    定义一个可以点击的按钮</li>
-<li>嵌入css：<strong>链接式</strong>  &lt;  **link**  href=”名称” type=”text/css” rel=”stylesheet” /&gt;<br><strong>导入样式</strong>  使用 @import 命令导入外部样式表。<br>&lt;  style   type=”text/css”&gt; @import url(daoru.css);&lt;/  style &gt;</li>
-<li>html布局：<br><strong>1.</strong>  &lt;nav&gt;    用于定义网页中的导航栏。<br><strong>2.</strong>  &lt;section&gt;代表 HTML 文档中的“节”或“段”，“段”可以理解为一篇文章里按照主题的分段，“节”则可以理解为一个页面里的分组。其主要作用就是对页面的内容进行分块或者对文章的内容进行分段。<br><strong>3.</strong>  &lt;article&gt;    用于定义文章或者其它独立的信息，代表一个页面中自成一体的 内容，例如论坛的帖子、博客上的文章、一篇用户的评论等。<br><strong>4.</strong>  &lt;aside&gt;    用于定义网页内容以外的部分，例如网页的侧边栏。<br><strong>5.</strong>  &lt;footer&gt;    用于定义网页的底部，例如作者、版权等信息。<br><strong>6.</strong>  &lt;details&gt;    用于定义一些详细信息，并且可以根据需要隐藏或显示这些详细信息。<br><strong>7.</strong>  &lt;summary&gt;    用于为&lt;details&gt;标签定义标题。<br><strong>8.</strong>  &lt;header&gt;用于定义网页的头部，头部中一般包含一些介绍性的内容，例如网站名称、logo 或者作者的信息。</li>
-<li>头部&lt;head&gt;标签<br><strong>1.&lt;title&gt;</strong>   标签用来定义 HTML 文档的标题，只有包含 &lt;title&gt; 标签的文档才算是一个有效的 HTML 文档。另外，一个 HTML 文档中仅允许存在一个 &lt;title&gt; 标签，并且 &lt;title&gt;   标签必须放置在 &lt;head&gt; 标签中。<br><strong>2.&lt;base&gt;</strong>  标签用于为页面中所有相对链接指定一个基本链接，当您设置了基本链接后，当前页面中的所有相对链接都会使用这个基本链接作为前缀<br><strong>3.&lt;link&gt;</strong>   标签经常用于引用外部 CSS 样式表，&lt;link&gt; 标签中包含两个主要的属性，分别是 rel 和 href。rel 属性用来指示引用文件的类型，href 属性用来设置外部文件的路径。<br><strong>4.</strong>  使用 &lt;style&gt; 标签可以在 HTML 文档中嵌入 CSS 样式</li>
+        <h1 id="css-复习"><a href="#css-复习" class="headerlink" title="css 复习"></a>css 复习</h1><hr>
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
+<li>通用选择器</li>
+<li>标签选择器</li>
+<li>ID 选择器</li>
+<li>类选择器</li>
+<li>后代选择器</li>
+<li>子选择器</li>
+<li>相邻兄弟选择器  </li>
+<li>通用兄弟选择器</li>
+<li>分组选择器</li>
+<li>属性选择器<span id="more"></span></li>
 </ul>
-
+<hr>
+<h2 id="长度单位"><a href="#长度单位" class="headerlink" title="长度单位"></a>长度单位</h2><ul>
+<li>em 相对于自身 font-size（字体大小）属性的值</li>
+<li>rem 相对于根元素&lt;html&gt;的字体大小</li>
+<li>% 相对于父元素宽度或字体的百分比</li>
+</ul>
+<hr>
+<h2 id="background"><a href="#background" class="headerlink" title="background"></a>background</h2><ul>
+<li>background-color：设置元素的背景颜色；</li>
+<li>background-image： url(‘URL’)：设置元素的背景图像；</li>
+<li>background-repeat：控制背景图像是否重复；  <table>
+<thead>
+<tr>
+<th>repeat</th>
+<th>默认值，背景图像将在垂直方向和水平方向上重复</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>repeat-x</td>
+<td>背景图像仅在水平方向上重复</td>
+</tr>
+<tr>
+<td>repeat-y</td>
+<td>背景图像仅在垂直方向上重复</td>
+</tr>
+<tr>
+<td>no-repeat</td>
+<td>背景图像仅显示一次，不在任何方向上重复</td>
+</tr>
+</tbody></table>
+</li>
+<li>background-position :默认相对于左上角</li>
+<li>ackground-origin 是 CSS3 中新增的属性。<br>在使用 background-position 属性来设置背景图像的位置时，默认是以元素左上角的位置来计算的。<br>您还可以使用 background-origin 属性来设置 background-position 属性相对哪个位置来定位背景图像  <table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>padding-box</td>
+<td>相对于元素的内边距区域来定位背景图像</td>
+</tr>
+<tr>
+<td>border-box</td>
+<td>相对于元素的边框区域来定位背景图像</td>
+</tr>
+<tr>
+<td>content-box</td>
+<td>相对于元素的内容区域来定位背景图像</td>
+</tr>
+</tbody></table>
+</li>
+<li>background-attachment 属性用来设置背景图像是固定在某个位置还是跟随页面一起滚动<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>scroll</td>
+<td>默认值，背景图像随着页面元素的滚动而移动</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>当页面的其余部分滚动时，背景图像固定不动</td>
+</tr>
+</tbody></table>
+</li>
+<li>background-size： x% y%<br>使用百分比表示背景图像相对于所在元素宽度与高度的百分比，x% 表示宽度，y% 表示高度，如果只设置第一个值，那么第二个值将被设置为默认值 auto（自动）</li>
+<li>background-clip ： 是 CSS3 中新增的属性，通过它可以设置背景图像的显示区域。<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border-box</td>
+<td>默认值，在元素边框及以内的区域显示背景图像</td>
+</tr>
+<tr>
+<td>padding-box</td>
+<td>在元素内边距及以内的区域显示背景图像</td>
+</tr>
+<tr>
+<td>content-box</td>
+<td>在元素内容区域显示背景图像</td>
+</tr>
+<tr>
+<td><strong>简写</strong>  ：background 是背景属性的简写形式</td>
+<td></td>
+</tr>
+<tr>
+<td>color-image-position-size-repeat-attachment-origin-clip</td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<hr>
+<h2 id="font"><a href="#font" class="headerlink" title="font"></a>font</h2><ul>
+<li>font-family：设置字体；</li>
+<li>font-style：设置字体的风格，例如倾斜、斜体等； </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>italic</td>
+<td>文本以斜体显示   (italic 显示的字体的斜体版本)</td>
+</tr>
+<tr>
+<td>oblique</td>
+<td>文本倾斜显示 ( oblique 则只是一个倾斜的普通字体)</td>
+</tr>
+<tr>
+<td>content-box</td>
+<td>在元素内容区域显示背景图像</td>
+</tr>
+</tbody></table>
+<ul>
+<li>font-weight：设置字体粗细：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bold</td>
+<td>粗体字体</td>
+</tr>
+<tr>
+<td>bolder</td>
+<td>更粗的字体</td>
+</tr>
+<tr>
+<td>lighter</td>
+<td>更细的字体</td>
+</tr>
+<tr>
+<td>100、200、300、400、500、600、700、800、900</td>
+<td>100 为最细的字体，400 等同于 normal，700 等同于 bold</td>
+</tr>
+</tbody></table>
+<ul>
+<li>font-size：设置字体尺寸：    px</li>
+<li>font-variant：将小写字母转换为小型大写字母<br>small-caps    将文本中的小写英文字母转换为小型大写字母<br><strong>简写</strong>    style-variant-weight-stretch-size-height-family  </li>
+</ul>
+<hr>
+<h2 id="text"><a href="#text" class="headerlink" title="text"></a>text</h2><ul>
+<li><p>text-align：设置文本的水平对齐方式；</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td>默认值，左对齐</td>
+</tr>
+<tr>
+<td>right</td>
+<td>右对齐</td>
+</tr>
+<tr>
+<td>center</td>
+<td>居中对齐</td>
+</tr>
+<tr>
+<td>justify</td>
+<td>两端对齐  (不足一行仍显示左对齐，满足自动换行时除最后一行每个字符有相        同宽度)</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>text-decoration：设置文本的装饰；</p>
+<p> text-align：设置文本的水平对齐方式；</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>默认值，标准文本，没有额外装饰，可以用来删除已有的文本装饰</td>
+</tr>
+<tr>
+<td>underline</td>
+<td>在文本下方添加一条下滑线</td>
+</tr>
+<tr>
+<td>overline</td>
+<td>在文本上方添加一条上滑线</td>
+</tr>
+<tr>
+<td>line-through</td>
+<td>在文本的中间定义一条横向贯穿文本的线（类似于删除线）</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>text-transform：设置文本中英文的大小写转换方式</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>capitalize</td>
+<td>将文本中的每个单词更改为以大写字母开头的形式</td>
+</tr>
+<tr>
+<td>uppercase</td>
+<td>将文本中的英文字母全部更改为大写</td>
+</tr>
+<tr>
+<td>lowercase</td>
+<td>将文本中的英文字母全部更改为小写</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>text-indent：设置文本的缩进方式；</p>
+</li>
+<li><p>line-height：设置行高；</p>
+</li>
+<li><p>letter-spacing：设置字符间距；</p>
+</li>
+<li><p>word-spacing：设置单词与单词之间的间距（对中文无效）；</p>
+</li>
+<li><p>text-shadow：设置文本阴影；</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h-shadow</td>
+<td>必填值，设置阴影的水平位置，允许为负值</td>
+</tr>
+<tr>
+<td>v-shadow</td>
+<td>必填值，设置阴影的垂直位置，允许为负值</td>
+</tr>
+<tr>
+<td>blur</td>
+<td>可选值，设置模糊的距离</td>
+</tr>
+<tr>
+<td>color</td>
+<td>可选值，设置阴影的颜色</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>vertical-align：设置文本的垂直对齐方式；  </p>
+</li>
+</ul>
+<p> <img src="http://c.biancheng.net/uploads/allimg/210806/1113593623-9.png" alt="文本样例"></p>
+<ul>
+<li><p>white-space：设置文本中空白的处理方式；</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>默认值，忽略文本中的空白</td>
+</tr>
+<tr>
+<td>pre</td>
+<td>保留文本中的空白，类似于&lt;pre&gt;标签的效果</td>
+</tr>
+<tr>
+<td>nowrap</td>
+<td>文本会在一行中显示，不会自动换行，直到遇到<br>标签为止</td>
+</tr>
+<tr>
+<td>pre-wrap</td>
+<td>保留文本中的空白，但是正常地进行换行</td>
+</tr>
+<tr>
+<td>pre-line</td>
+<td>合并文本中的空白，但是保留换行符</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>direction：设置文本方向。 </p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ltr</td>
+<td>默认值，文本按从左到右的方向输出</td>
+</tr>
+<tr>
+<td>rtl</td>
+<td>文本按从右到左的方向输出</td>
+</tr>
+</tbody></table>
+<hr>
+</li>
+</ul>
+<h2 id="css链接"><a href="#css链接" class="headerlink" title="css链接"></a>css链接</h2><p>css链接有四种样式<br>：link  ：visited  ：hover  ：active (固定顺序)  </p>
+<h2 id="CSS边框样式-border"><a href="#CSS边框样式-border" class="headerlink" title="CSS边框样式 border"></a>CSS边框样式 border</h2><p>边框有三种样式<br>width   style  color   </p>
+<ul>
+<li>style 可以单独指定 border-top-style  border-right-style  border-bottom-style  border-left-style</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>无边框</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>隐藏边框，与 “none” 类似</td>
+</tr>
+<tr>
+<td>dotted</td>
+<td>定义点状虚线边框</td>
+</tr>
+<tr>
+<td>dashed</td>
+<td>定义虚线边框</td>
+</tr>
+<tr>
+<td>solid</td>
+<td>定义实线边框</td>
+</tr>
+<tr>
+<td>double</td>
+<td>定义双实线边框，双实线边框的宽度等于 border-width 的值</td>
+</tr>
+<tr>
+<td>groove</td>
+<td>定义 3D 凹槽边框，其效果取决于 border-color 的值</td>
+</tr>
+<tr>
+<td>ridge</td>
+<td>定义 3D 垄状边框，其效果取决于 border-color 的值</td>
+</tr>
+<tr>
+<td>inset</td>
+<td>定义 3D 嵌入边框，其效果取决于 border-color 的值</td>
+</tr>
+<tr>
+<td>outset</td>
+<td>定义 3D 突出边框，其效果取决于 border-color 的值</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>weidh 表示边框宽度 thin medium thick<br>注：</p>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>四个参数</td>
+<td>上右下左</td>
+</tr>
+<tr>
+<td>三个参数</td>
+<td>上，左右，下</td>
+</tr>
+<tr>
+<td>两个参数</td>
+<td>上下，左右</td>
+</tr>
+<tr>
+<td>一个参数</td>
+<td>全部</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="css表格样式"><a href="#css表格样式" class="headerlink" title="css表格样式"></a>css表格样式</h2><p>表格样式属性：table-layout  border-collapse  border-spacing caption-side empty-cells</p>
+<ul>
+<li>table-layout   定义表格样式 </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>automatic</td>
+<td>默认值，自定表格布局，表示表格中每列的宽度视单元格中的内容而定</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>固定表格布局，表示表格的宽度由列宽度、单元格边框、单元格之间的间距等因素而定</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ol>
+<li>固定表格布局<br>固定表格布局允许浏览器更快地对表格进行布局。在固定表格布局中，表格的水平宽度仅取决于列宽度、表格边框宽度、单元格间距等因素，与单元格中的内容无关。也就是说，表格中超出表格宽度的内容可能会被忽略。</li>
+<li>自动表格布局<br>在自动表格布局中，列的宽度视单元格中的内容（没有换行的最宽内容）而定，也就是说如果某个单元格的宽度为 100px，但单元格中内容所占据的宽度要大于 100px，这就会导致单元格中的内容将单元格撑大。正是因为这一特点，此种算法可能会比较慢。</li>
+</ol>
+<ul>
+<li><p>border-collapse  用来设置是否合并表格中相邻的边框  </p>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>separate</td>
+<td>默认值，相邻的两个边框是分开的，使用它不会忽略 border-spacing 和 empty-cells 属性</td>
+</tr>
+<tr>
+<td>collapse</td>
+<td>相邻的两个边框会合并为一个单一的边框，使用它会忽略 border-spacing 和 empty-cells 属性</td>
+</tr>
+</tbody></table>
+</li>
+<li><p> border-spacing  可以设置相邻单元格边框之间的距离（border-collapse：separate 时才有效）  </p>
+</li>
+<li><p>caption-side 可以设置表格标题的位置</p>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>top</td>
+<td>默认值，将表格标题定位在表格正上方</td>
+</tr>
+<tr>
+<td>bottom</td>
+<td>将表格标题定位在表格正下方</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>empty-cells 设置当某个单元格中没有内容时，是否显示这个空单元格  （border-collapse：separate 时才有效）    </p>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>hide</td>
+<td>隐藏空单元格周围的边框</td>
+</tr>
+<tr>
+<td>show</td>
+<td>默认值，显示空单元格周围的边框</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="css-list-style"><a href="#css-list-style" class="headerlink" title="css list-style"></a>css list-style</h2><p>列表样式共三个属性：-type -position -image </p>
+</li>
+<li><p>-type 可以设置不同的标记样式</p>
+</li>
+<li><p>-position inside outside</p>
+</li>
+<li><p>-image 可以将列表项前的标记替换为一个图像： list-style-image: url(‘链接’);<br><strong>简写</strong>  t p i</p>
+</li>
+</ul>
+<hr>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p> <img src="http://c.biancheng.net/uploads/allimg/210806/145231E13-0.gif" alt="盒子模型"></p>
+<ul>
+<li>width 与  height指定内容区大小 对于img，说指定其中一种，另一个自动缩放<br>max-width与max-height 指定最大尺寸<br>min-width与min-height 指定最小尺寸 </li>
+<li>box-shadow<br>box-shadow: h-shadow v-shadow blur spread color inset(默认outset);</li>
+</ul>
+<blockquote>
+<p>提示：与 text-shadow 属性相似，box-shadow 属性也可以同时设定多组阴影效果，每组之间使用逗号分隔，定义的多组阴影效果会按照定义顺序依次罗列，第一个阴影在最上面，以此类推。</p>
+</blockquote>
+<hr>
+<h2 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h2><p>为元素设置外边距    </p>
+<h3 id="外边距折叠"><a href="#外边距折叠" class="headerlink" title="外边距折叠"></a>外边距折叠</h3><p>外边距折叠指的是相邻的两个或多个外边距会在垂直方向上发生合并，合并为一个外边距。关于外边距折叠有以下几点需要注意：<br>  margin 折叠只发生在块级元素上；<br>1.浮动元素的外边距不会与任何外边距发生折叠；<br>2.设置了 overflow 属性且值不为 visible 的块级元素，将不会与它的子元素发生外边距折叠；<br>3.绝对定位元素的外边距不与任何外边距发生折叠；<br>4.根元素（例如<body>）的外边距不与其它任何外边距发生折叠。</p>
+<p>在<strong>相邻的两个兄弟元素</strong>，<strong>父元素与子元素</strong>之间：<br>如果相邻两个元素外边距的值都为<strong>正数</strong>，那么两个元素的实际间距为两个外边距中<strong>较大</strong>的那个；<br>如果相邻两个元素外边距的值都为<strong>负数</strong>，那么两个元素的实际间距为两个外边距中<strong>较小</strong>的那个；<br>如果相邻两个元素外边距的值<strong>一个为正数、一个为负数</strong>，那么两个元素之间的实际间距为<strong>两个外边距相加的和</strong>。  </p>
+<hr>
+<h2 id="padding"><a href="#padding" class="headerlink" title="padding"></a>padding</h2><p>为元素设置内边距</p>
+<hr>
+<h2 id="鼠标样式"><a href="#鼠标样式" class="headerlink" title="鼠标样式"></a>鼠标样式</h2><p>除了可以使用系统默认的光标样式外，您也可以使用图像文件来自定义光标的样式，如下所示：<br>cursor: url(“custom.gif”), url(“custom.cur”), default;<br>（提示：.cur 格式是光标文件的标准格式，您可以使用一些在线工具（例如 <a target="_blank" rel="noopener" href="https://convertio.co/zh/cur-converter/%EF%BC%89">https://convertio.co/zh/cur-converter/）</a> 将 .jpg、.gif 等格式的图像文件转换为 .cur 格式。）</p>
+<hr>
+<h2 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h2><p>轮廓有四个属性值：color， style，width，offset<br> style 属性可以设置轮廓得样式</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>无边框</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>隐藏边框，与 “none” 类似</td>
+</tr>
+<tr>
+<td>dotted</td>
+<td>定义点状虚线边框</td>
+</tr>
+<tr>
+<td>dashed</td>
+<td>定义虚线边框</td>
+</tr>
+<tr>
+<td>solid</td>
+<td>定义实线边框</td>
+</tr>
+<tr>
+<td>double</td>
+<td>定义双实线边框，双实线边框的宽度等于 border-width 的值</td>
+</tr>
+<tr>
+<td>groove</td>
+<td>定义 3D 凹槽边框，其效果取决于 border-color 的值</td>
+</tr>
+<tr>
+<td>ridge</td>
+<td>定义 3D 垄状边框，其效果取决于 border-color 的值</td>
+</tr>
+<tr>
+<td>inset</td>
+<td>定义 3D 嵌入边框，其效果取决于 border-color 的值</td>
+</tr>
+<tr>
+<td>outset</td>
+<td>定义 3D 突出边框，其效果取决于 border-color 的值</td>
+</tr>
+</tbody></table>
+<p>width 属性用来设置轮廓的宽度，只有当 outline-style 属性的值不为 none 时，outline-width 属性才会生效。thin  medium  thick</p>
+<p>color 属性用来设置轮廓的颜色，属性的可选值如下</p>
+<p><strong>简写</strong>：w  s  c</p>
+<hr>
+<h2 id="精灵图"><a href="#精灵图" class="headerlink" title="精灵图"></a>精灵图</h2><p>  精灵图就是一个大的背景图，您只需要使用 background-position 来移动背景图，从而只显示背景图的一部分。<br>  使用精灵图可以减少图片的体积，也可以显著的减少对服务器的请求次数，提高网页的加载速度。</p>
+<hr>
+<h2 id="overflow"><a href="#overflow" class="headerlink" title="overflow"></a>overflow</h2><p>滚动条:该属性可以设置如何处理溢出元素内容区的内容<br> |值|描述|<br> |—-|—-|<br> |visible|    默认值，对溢出的内容不做处理，内容会在元素内容区之外显示|<br> |hidden|隐藏溢出元素内容区的内容|<br> |scroll|隐藏溢出元素内容区的内容，并在元素的左侧和下方分别创建一个滚动条，通过滑动滚动条可以查看元素中的所有内容|<br> |auto    |如果出现内容溢出，则会在元素左侧创建一个滚动条，通过滑动滚动条可以查看元素中的全部内容|</p>
+<hr>
+<h2 id="css计数器"><a href="#css计数器" class="headerlink" title="css计数器"></a>css计数器</h2><p>使用计数器<strong>三步</strong>走：<br>1.counter-reset：none | [<identifier> <integer>]<br>阻止复位 计数器名字 计数器起始值<br>2.counter-increment:格式同上<br>3.counter(name)  </p>
+<pre><code>    body   &#123;  
+            counter-reset: chapter;   
+            &#125;  
+    h5, h6 &#123;  
+              margin: 5px 0 5px;  
+            &#125;  
+    h5     &#123;  
+             counter-reset: section;   //创建在该标签之后调用的计数器
+             counter-increment: chapter;  //为本标签中调用计数器设置增加属性
+            &#125;  
+    h6     &#123;  
+             counter-increment: section;  
+            &#125;  
+    h5:before &#123;  
+           content: &quot;Chapter &quot; counter(chapter) &quot;. &quot;;  
+            &#125;  
+    h6:before &#123;  
+           content: counter(chapter) &quot;.&quot; counter(section) &quot; &quot;;  
+            &#125;  
+</code></pre>
+<p>counters(name, string, list-style-type)<br>计数器名称 连接嵌套与被嵌套计数器的字符 计数器风格    </p>
+<pre><code>     ol &#123;
+        /* 为每个ol元素中li创建新的计数器实例 */
+        counter-reset: ol-list;
+        list-style-type: none;
+    &#125;
+    li:before &#123;
+        /* 只增加计数器的当前实例 */
+        counter-increment: ol-list;
+        /* 为所有计数器实例增加以“.”分隔的值 */
+        content: counters(ol-list, &quot;.&quot;) &quot;、&quot;;
+    &#125;
+</code></pre>
+<hr>
+<h2 id="css-visibility"><a href="#css-visibility" class="headerlink" title="css visibility"></a>css visibility</h2><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>visible</td>
+<td>默认值，表示元素是可见的</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>隐藏元素</td>
+</tr>
+<tr>
+<td>collapse</td>
+<td>主要用来隐藏表格的行和列，隐藏的行或列所占的空间可以被其他表格内容使用；如果在其他元素上使用，其效果等同于“hidden”</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><p> 元素显示类型：<br>  |值|描述|<br> |—-|—-|<br> |none|将元素设置为块级元素|<br> |block|隐藏元素|<br> |inline|将元素设置为内联元素|<br> |inline-block|将元素设置为行内块元素|</p>
+<hr>
+<h2 id="position"><a href="#position" class="headerlink" title="position"></a>position</h2><p> css中定位有五种方式：</p>
+<ul>
+<li>static 静态定位 元素显示在正常位置<br><img src="http://c.biancheng.net/uploads/allimg/210809/104U46022-0.gif" alt="static"></li>
+<li>relative 相对定位 相对于正常位置<br><img src="http://c.biancheng.net/uploads/allimg/210809/104U424H-1.gif" alt="relative"><br><img src="http://c.biancheng.net/uploads/allimg/210809/104U43X5-2.gif" alt="relative"></li>
+<li>absolute 绝对定位 相对于第一个非静态父元素<br><img src="http://c.biancheng.net/uploads/allimg/210809/104U46010-3.gif" alt="absolute"><br><img src="http://c.biancheng.net/uploads/allimg/210809/104U42506-4.gif" alt="absolute"></li>
+<li>fixed 相对于浏览器<br><img src="http://c.biancheng.net/uploads/allimg/210809/104U45956-5.png" alt="fixed"></li>
+<li>sticky 粘性定位，它是 relative 和 fixed 的结合体，能够实线类似吸附的效果，当滚动页面时它的效果与 relative 相同，当要滚动到屏幕之外时则会自动变成 fixed 的效果。<br><img src="http://c.biancheng.net/uploads/allimg/210809/104U4B28-6.png" alt="sticky"></li>
+</ul>
+<hr>
+<h2 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h2><p>通常我们可能会认为 HTML 网页是个二维的平面，因为页面中的文本、图像或者其它元素都是按照一定顺序排列在页面上的，每个元素之间都有一定的间隙，不会重叠。然而，实际的网页其实是三维的，元素之间可能会发生堆叠（重叠），您可以通过 CSS 中的 z-index 属性来设置元素的堆叠顺序，如下图所示：<br><img src="http://c.biancheng.net/uploads/allimg/210809/110131OI-0.gif" alt="元素堆叠"><br> |值|描述|<br> |—-|—-|<br> |auto|默认值，堆叠顺序与父元素相等|<br> |number|使用具体数值（整数）设置元素的堆叠顺序|</p>
+<hr>
+<h2 id="css-float"><a href="#css-float" class="headerlink" title="css float"></a>css float</h2><p>浮动可以使一个元素脱离自己原本的位置，并在父元素的内容区中向左或向右移动，直到碰到父元素内容区的边界或者其它浮动元素为止。<br>另外，在浮动元素之后定义的文本或者行内元素都将环绕在浮动元素的一侧</p>
+<ul>
+<li>添加浮动：left right none(默认值)</li>
+<li>清除浮动：left right both none(默认值)</li>
+</ul>
+<hr>
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>伪类的名称不区分大小写，但需要以冒号:开头  </p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:active</td>
+<td>:checked</td>
+<td>:disabled</td>
+<td>:empty</td>
+<td>:enabled</td>
+<td>:first-child</td>
+<td>:first-of-type</td>
+<td>:focus</td>
+</tr>
+<tr>
+<td>:hover</td>
+<td>:in-range</td>
+<td>:invalid</td>
+<td>:lang(language)</td>
+<td>:last-child</td>
+<td>:last-of-type</td>
+<td>:link</td>
+<td>:not(selector)</td>
+</tr>
+<tr>
+<td>:nth-child(n)</td>
+<td>:nth-last-child(n)</td>
+<td>:nth-last-of-type(n)</td>
+<td>:nth-of-type(n)</td>
+<td>:only-of-type</td>
+<td>:only-child</td>
+<td>:optional</td>
+<td>:out-of-range</td>
+</tr>
+<tr>
+<td>:read-only</td>
+<td>:read-write</td>
+<td>:required</td>
+<td>:root</td>
+<td>:target</td>
+<td>:valid</td>
+<td>:visited</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h2><p>在 CSS1 和 CSS2 中，伪元素的使用与伪类相同，都是使一个冒号:与选择器相连。但在 CSS3 中，将伪元素单冒号的使用方法改为了使用双冒号::，以此来区分伪类和伪元素。因此，建议在使用伪元素时使用双冒号而不是单冒号。  </p>
+<table>
+<thead>
+<tr>
+<th>伪元素</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>::after</td>
+<td>::before</td>
+<td>::first-letter</td>
+</tr>
+<tr>
+<td>::first-line</td>
+<td>::selection</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>selection: 匹配用户选择的元素部分  </p>
+<hr>
+<h2 id="opacity"><a href="#opacity" class="headerlink" title="opacity"></a>opacity</h2><p>用来设置元素的透明度，它不仅对颜色有效，对图像或者页面中其它的元素也有效<br>opacity: number;</p>
+<ul>
+<li>1.其中 number 为一个 0~1 之间的浮点数（小数），用来表示元素的透明度，值越小则越透（0 表示完全透明，1 表示完全不透明）。</li>
+<li>2.当一个元素定义了 opacity 属性，并且其值小于 1 时，那么它的子元素也会拥有同样的透明度；</li>
+<li>3.当一个元素定义了 opacity 属性，并且其值小于 1 时，将会重新定义该元素默认的 z-index 属性，如果其它的元素为非定位元素，那么该元素的堆叠级别将会高于其它元素；<br><strong>注</strong>  ：IE8 或者更早版本的 IE 浏览器不支持 opacity 属性，使用filter<br>filter: alpha(值0~100)<br>为了让所有浏览器都可以实现透明效果，您可以同时定义 opacity 和 filter 两个属性</li>
+</ul>
+<hr>
+<h2 id="radius"><a href="#radius" class="headerlink" title="radius"></a>radius</h2><p>圆角 语法：border-top-left/right:    border-bottom-right/left:  </p>
+<hr>
+<h2 id="border-image"><a href="#border-image" class="headerlink" title="border-image"></a>border-image</h2><p>使用图像来作为元素的边框，以创建出丰富多彩边框效果。  </p>
+<ul>
+<li>border-image-source：定义边框图像的路径；</li>
+<li>border-image-slice：定义边框图像从什么位置开始分割；(扣除中心区域)<br><img src="http://c.biancheng.net/uploads/allimg/210809/15324912F-2.gif" alt="slice"></li>
+<li>border-image-width：定义边框图像的厚度（宽度）；</li>
+<li>border-image-outset：定义边框图像的外延尺寸（边框图像区域超出边框的量）；</li>
+<li>border-image-repeat：定义边框图像的平铺方式。<br>stretch,repeat<br>round：与 repeat 关键字类似，不同之处在于，当背景图像不能以整数次平铺时，会根据情况缩放图像；<br>space：与 repeat 关键字类似，不同之处在于，当背景图像不能以整数次平铺时，会用空白间隙填充在图像周围。<br><strong>简写</strong>  : source-slice-width-outset-repeat</li>
+</ul>
+<hr>
+<h2 id="渐变-感觉没什么用-暂时跳过"><a href="#渐变-感觉没什么用-暂时跳过" class="headerlink" title="渐变 感觉没什么用 暂时跳过"></a>渐变 感觉没什么用 暂时跳过</h2><hr>
+<h2 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h2><p>过渡效果(类似flash动画)<br>CSS 中提供了 5 个有关过渡的属性，如下所示：</p>
+<ul>
+<li>  <strong>transition-property</strong>  ：设置元素中参与过渡的属性；<br>none,all,各属性名(用,隔开)</li>
+<li>  <strong>transition-duration</strong>  ：设置元素过渡的持续时间；<br>0s不会有效果</li>
+<li>  <strong>transition-timing-function</strong>  ：设置元素过渡的动画类型；<br>linear,ease,ease-in,ease-out,ease-in-out,cubic-bezier()函数</li>
+<li><strong>transition-delay</strong>  ：设置过渡效果延迟(等待)的时间，默认为 0；<br>   <strong>简写</strong>    ：transition：简写属性，用于同时设置上面(按上面顺序)的四个过渡属性。</li>
+</ul>
+<hr>
+<h2 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h2><p>例：<br><img src="http://c.biancheng.net/uploads/allimg/210810/1112331T9-0.gif" alt="多列布局例子"></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>column-count</td>
+<td>指定元素应该分为几列</td>
+</tr>
+<tr>
+<td>column-fill</td>
+<td>指定如何填充每个列</td>
+</tr>
+<tr>
+<td>column-gap</td>
+<td>指定列与列之间的间隙</td>
+</tr>
+<tr>
+<td>column-rule</td>
+<td>所有 column-rule-* 属性的简写形式(w s c)</td>
+</tr>
+<tr>
+<td>column-rule-color</td>
+<td>指定列与列之间边框的颜色</td>
+</tr>
+<tr>
+<td>column-rule-style</td>
+<td>指定列与列之间边框的样式</td>
+</tr>
+<tr>
+<td>column-rule-width</td>
+<td>指定列与列之间边框的宽度</td>
+</tr>
+<tr>
+<td>column-span</td>
+<td>指定元素应该横跨多少列  all,none</td>
+</tr>
+<tr>
+<td>column-width</td>
+<td>指定列的宽度</td>
+</tr>
+<tr>
+<td>columns</td>
+<td>column-width 与 column-count 属性的简写属性</td>
+</tr>
+</tbody></table>
+<p>style:<br>|值|描述|<br>|—-|—-|<br>|none|    无边框|<br>|hidden|    隐藏边框，与 “none” 类似|<br>|dotted|    定义点状虚线边框|<br>|dashed    |定义虚线边框|<br>|solid    |定义实线边框|<br>|double    |定义双实线边框，双实线边框的宽度等于 border-width 的值|<br>|groove    |定义 3D 凹槽边框，其效果取决于 border-color 的值|<br>|ridge    |定义 3D 垄状边框，其效果取决于 border-color 的值|<br>|inset    |定义 3D 嵌入边框，其效果取决于 border-color 的值|<br>|outset    |定义 3D 突出边框，其效果取决于 border-color 的值|  </p>
+<hr>
+<h2 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a>box-sizing</h2><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>content-box</td>
+<td>默认值，元素的实际宽度或高度等于元素内容区的宽度或高度、内边距和边框的和</td>
+</tr>
+<tr>
+<td>border-box</td>
+<td>在元素的内容区内绘制内边距或边框，内边距或边框不会影响元素的实际宽度或高度</td>
+</tr>
+<tr>
+<td><strong>提示：当为元素定义 box-sizing: border-box; 属性时，元素内容区的实际宽度和高度是 width 和 height 属性中减去各边的边框和内边距的宽度。</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="filter-滤镜-暂不总结"><a href="#filter-滤镜-暂不总结" class="headerlink" title="filter (滤镜 暂不总结)"></a>filter (滤镜 暂不总结)</h2><hr>
+<h2 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h2><p>Flex 是 Flexible Box 的缩写，意为“弹性布局”或者“弹性盒子”，是 CSS3 中的一种新的布局模式，可以简便、完整、响应式地实现各种页面布局，当页面需要适应不同的屏幕大小以及设备类型时非常适用。目前，几乎所有的浏览器都支持 Flex 布局。<br>  <strong>基本概念</strong><br>1.采用 Flex 布局的元素，称为 Flex 容器（flex container），简称“容器”。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称“项目”。<br>2.容器默认存在两根轴，分别为水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置叫做 main start，结束位置叫做 main end；交叉轴的开始位置叫做 cross start，结束位置叫做 cross end。<br>3.项目默认沿主轴排列。单个项目占据的主轴空间叫做 main size，占据的交叉轴空间叫做 cross size。<br><img src="http://c.biancheng.net/uploads/allimg/210810/1504491454-0.gif" alt="Flex基本概念"></p>
+<blockquote>
+<p>提示：您可以通过将元素的 display 属性设置为 flex（生成块级 flex 容器）或 inline-flex（生成类似 inline-block 的行内块级 flex 容器）。当一个元素设置了 Flex 布局以后，其子元素的 float、clear 和 vertical-align 等属性将失效。</p>
+</blockquote>
+<hr>
+<h2 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h2><p>  <strong>flex-direction</strong>  ：row,row-reverse,column,column-reverse<br>  <strong>flex-wrap</strong>  :nowrap,wrap,wrap-reverse<br>  <strong>flex-flow</strong>  : 上面两个属性简写，d,w<br>  <strong>justify-content</strong>  :flex-start,flex-end,center,space-between,space-around<br>  <strong>align-items</strong>  ：stretch,centre,flex-start,flex-end,baseline<br>  <strong>align-content</strong>  : 与 justify-content 属性类似，可以在弹性盒子的侧轴还有多余空间时调整容器内项目的对齐方式</p>
+<hr>
+<h2 id="项目属性"><a href="#项目属性" class="headerlink" title="项目属性"></a>项目属性</h2><p><strong>order</strong>  :设置项目在容器中的位置；<br><strong>align-self</strong>  ：auto,stretch,centre,flex-start,flex-end,baseline<br>(该属性会覆盖align-items)<br><strong>flex</strong>  ：grow-shrink-basis  有计算公式</p>
+<hr>
+<h2 id="resize"><a href="#resize" class="headerlink" title="resize"></a>resize</h2><p>该属性允许用户通过拖动的方式来自由缩放元素的尺寸<br>none,both,horizontal,vertical</p>
+<hr>
+<h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><p>  <strong>基本概念</strong>  CSS响应式布局也称自适应布局，是 Ethan Marcotte 在 2010 年 5 月份提出的一个概念，简单来讲就是一个网站能够兼容多个不同的终端（设备），而不是为每个终端做一个特定的版本。这个概念是为解决移动端浏览网页而诞生的。响应式布局能够为使用不同终端的用户提供很好的用户体验，而且随着大屏智能手机的普及，用“大势所趋”来形容也不为过。</p>
+<h2 id="2D，3D转换"><a href="#2D，3D转换" class="headerlink" title="2D，3D转换"></a>2D，3D转换</h2>
       
 
       
@@ -201,6 +1072,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -251,7 +1137,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/14/html%20%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/18/css%20%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,18 +1151,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/01/14/css%20%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/01/18/html%20%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          Html 学习记录
         
       </div>
     </a>
   
   
-    <a href="/2022/01/13/%E6%88%91%E7%9A%84Markdown%E5%AD%A6%E4%B9%A0%E5%B0%8F%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2022/01/14/javascript%E5%A4%8D%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS复习</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -322,7 +1208,7 @@
     		&copy; 2022 John Doe
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		<!-- <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten -->
       	</div>
     </div>
   </div>
@@ -400,6 +1286,34 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Lua</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">c#</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -481,7 +1395,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很遗憾&lt;br&gt;&lt;br&gt;没有在正确的时间与地点&lt;br&gt;和你见面</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很遗憾&lt;br&gt;&lt;br&gt;没有在正确的时间与地点&lt;br&gt;和你见面&lt;br&gt;&lt;br&gt;共同努力！&lt;br&gt;</div>
   	  	
     	</section>
     
